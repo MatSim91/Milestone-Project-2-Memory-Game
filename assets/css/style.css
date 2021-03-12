@@ -10,10 +10,36 @@ body {
     text-align: left;
     height: 100vh;
     padding: 20px;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 }
 
 .row {
     width:100%;
+}
+
+.btn-instructions {
+    background-color: #ffff00;
+    color: #000000;
+    min-width: 110px;
+    border-radius: 25px;
+}
+
+.btn-instructions:hover {
+    background-color: #000000;
+    color: #ffff00;
+    border: #ffff00 solid 2px;
+}
+
+.btn-play-game {
+    background-color: #20b136;
+    color: #000000;
+    min-width: 110px;
+    border-radius: 25px;
+}
+
+.btn-play-game:hover {
+    background-color: #000000;
+    color: #20b136;
+    border: #20b136 solid 2px;
 }
