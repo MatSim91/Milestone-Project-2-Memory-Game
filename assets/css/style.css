@@ -123,7 +123,6 @@ body {
     border-radius: 25px;
     background-color: #EAEAEA;
     padding: 10px 25px;
-    min-width: 200px;
     font-size: 20px;
 }
 
@@ -138,4 +137,18 @@ body {
 .close-button:hover {
     color: #000000;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-play-game {
+    background-color: #00FF00;
+    color: #000000;
+    border: #000000 solid 2px;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 25px;
+}
+
+.modal-play-game:hover {
+    color: #000000;
+    background-color: rgba(0, 255, 0, 0.3);
 }
