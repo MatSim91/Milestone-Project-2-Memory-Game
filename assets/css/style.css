@@ -152,3 +152,14 @@ body {
     color: #000000;
     background-color: rgba(0, 255, 0, 0.3);
 }
+
+/*--- Media Queries ---*/
+
+@media (max-width: 390px) {
+    .btn-play-game {
+	    margin-top: 15px;
+    }
+    .game-title {
+        margin: 75px 0px -150px 0px;
+}
+}
