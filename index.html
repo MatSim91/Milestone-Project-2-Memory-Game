@@ -13,11 +13,26 @@
 <div class="mid-buttons">
     <div class="row">
         <div class="col-12 text-center">
-            <button class="btn btn-default btn-lg btn-instructions">Instructions</button>
+            <button class="btn btn-default btn-lg btn-instructions" id="open">Instructions</button>
             <a href="game.html" class="btn btn-default btn-lg btn-play-game">Play Game</a>
+            <div class="modal-container-instructions" id="modal_container_ins">
+                <div class="modal-ins">
+                    <h1 class="text-center">Instructions:</h1>
+                    <hr>
+                    <p class="text-center"><h4><b>Objective:</b> Find all the card pairs of the same color.</h4></p>
+                    <p><b>1.</b> Click on two cards of your choice to reveal them.</p>
+                    <p><b>If the colors match:</b> You choose it right 😁! The cards will stay faced up! </p>
+                    <p><b>If the colors don't match:</b> Sorry, you have choose it wrong ☹. Try to memorize the cards colors location.</p>
+                    <p><b>2.</b> Continue choosing the cards and try to memorize their colors to pick their pair colors.</p>
+                    <p><b>3.</b> The game will finish once you have found the color pair of all the sixteen cards.</p>
+                    <button class="close-button" id="close">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
     </main>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
