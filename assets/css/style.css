@@ -4,11 +4,40 @@ body {
     background-color: #000000;
 }
 
+.game-title {
+    color: #EAEAEA;
+    margin: 150px 0px -250px 0px;
+}
+
+.page-title {
+    font-size: 12vmin;
+}
+
+.c-color {
+    color: #FF0000;
+}
+
+.o-color {
+    color: #FFFF00;
+}
+
+.l-color {
+    color: #00FF00;
+}
+
+.r-color {
+    color: #0000FF;
+}
+
+.s-color {
+    color: 	#FFA500;
+}
+
 /*--- Vertical alignment with help from Stack Overflow (Link in the README Credits) ---*/
 
 .mid-buttons {
     text-align: left;
-    height: 100vh;
+    height: 90vh;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -20,14 +49,14 @@ body {
 
 .btn-instructions {
     background-color: #000000;
-    color: #ffff00;
-    border: #ffff00 solid 2px;
+    color: #FFFF00;
+    border: #FFFF00 solid 2px;
     border-radius: 30px;
     font-size: 25px;
 }
 
 .btn-instructions:hover {
-    background-color: #ffff00;
+    background-color: #FFFF00;
     color: #000000;
     min-width: 110px;
     
@@ -35,14 +64,14 @@ body {
 
 .btn-play-game {
     background-color: #000000;
-    color: #20b136;
-    border: #20b136 solid 2px;
+    color: #00FF00;
+    border: #00FF00 solid 2px;
     border-radius: 30px;
     font-size: 25px;
 }
 
 .btn-play-game:hover {
-    background-color: #20b136;
+    background-color: #00FF00;
     color: #000000;
     min-width: 110px;
 }
@@ -68,7 +97,7 @@ body {
 }
 
 .modal-ins {
-    background-color: #fffc9c;
+    background-color: #EAEAEA;
     width: 600px;
     max-width: 100%;
     padding: 25px 40px;
@@ -92,7 +121,7 @@ body {
     color: #000000;
     border: #000000 solid 2px;
     border-radius: 25px;
-    background-color: #fffc9c;
+    background-color: #EAEAEA;
     padding: 10px 25px;
     min-width: 200px;
     font-size: 20px;
@@ -102,7 +131,7 @@ body {
     color: #000000;
     border: #000000 solid 2px;
     border-radius: 25px;
-    background-color: #fffc9c;
+    background-color: #EAEAEA;
     padding: 10px 25px;
 }
 
