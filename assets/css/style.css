@@ -1,0 +1,19 @@
+/*---------------------------- Index Page ----------------------------*/
+
+body {
+    background-color: #000000;
+}
+
+/* 100vh Vertical alignment with help from https://stackoverflow.com/questions/47334164/how-to-middle-align-the-content-of-the-div-with-height-100vh/47334256 */
+
+.mid-buttons {
+    text-align: left;
+    height: 100vh;
+    padding: 20px;
+    display:flex;
+    align-items:center;
+}
+
+.row {
+    width:100%;
+}
