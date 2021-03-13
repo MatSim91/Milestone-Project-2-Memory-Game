@@ -50,13 +50,13 @@ This game was created with the main intent to
 
 -   ## Design
     -   ### Colour Scheme
-	- I have used [Coolors](https://coolors.co/80d6e6-57bc90-000000-ffffff) to choose the color pallete.
+	- I wanted to give a high color contrast to the project. So I have chosen to use all the three primary colors (red, yellow, and blue) all the three secondary colors (orange, green, and violet) and also white and black.
 
-        - The main colors used are
+        - The main colors used are Red (#FF0000), Yellow (#FFFF00), Blue (#0000FF), Orange (#FFA500), Green (#00FF00), Violet (#EE82EE), Black (#000000), White (#FFFFFF), and Grey (#EAEAEA).
 
         - 
 
-        ![Color Palette](project/co-palette.JPG)
+        ![Color Palette](project/Color-palette.JPG)
 
     -   ### Typography
 	   - 
