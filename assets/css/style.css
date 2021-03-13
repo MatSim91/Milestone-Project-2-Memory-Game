@@ -153,6 +153,13 @@ body {
     background-color: rgba(0, 255, 0, 0.3);
 }
 
+/*---------------------------- Game Page ----------------------------*/
+
+.game-title-2 {
+    color: #EAEAEA;
+    margin: 50px 0px 0px 0px;
+}
+
 /*--- Media Queries ---*/
 
 @media (max-width: 390px) {

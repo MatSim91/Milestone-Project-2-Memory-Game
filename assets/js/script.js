@@ -11,3 +11,6 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
     modal_container_ins.classList.remove('show');
 });
+
+/*---------------------------- Game Page ----------------------------*/
+
