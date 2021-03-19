@@ -11,6 +11,8 @@
 </head>
 <body>
 
+
+<!-- Game Title -->
 <div class="container-fluid container-wrapper">
 	<div class="row center">
 		<div class="col-12 text-center">
@@ -21,6 +23,7 @@
 
 <div class="container">
 
+    <!-- Memory game cards -->
     <ul class="deck" id="card-deck">
         <li class="card" type="dog">
             <i class="fas fa-dog"></i>
@@ -71,6 +74,23 @@
         <i class="fas fa-frog"></i>
         </li>
     </ul>
+
+    <!-- Stats Panel -->
+    <section class="stats-panel">
+        <ul class="stars">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+        </ul>
+        <span class="moves">0</span> Move(s)
+
+        <div class="timer"> </div>
+
+        <div class="restart">
+            <i class="fas fa-redo"></i>
+        </div>
+    </section>
+    
 </div>
 
 <script type="text/javascript" src="assets/js/script.js"></script>

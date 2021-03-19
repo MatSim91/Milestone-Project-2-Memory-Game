@@ -214,6 +214,45 @@ h1 {
 	margin: 0 0 3em;
 }
 
+/*--- Stats Panel ---*/
+
+.stats-panel {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.stats-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.stats-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+
+.stats-panel .restart {
+	float: right;
+    cursor: pointer;
+    color: #EAEAEA;
+}
+
+.fa-star {
+	color: #FFFF00;
+}
+
+.moves {
+    color: #EAEAEA;
+}
+
+.timer {
+	display: inline-block;
+    margin: 0 1rem;
+    color: #EAEAEA;
+}
+
 /*--- Media Queries ---*/
 
 @media (max-width: 390px) {
