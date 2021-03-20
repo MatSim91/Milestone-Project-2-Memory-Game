@@ -28,14 +28,14 @@ Icon's Memory Game was created for kids from age 3-6 years but even adults can e
 
 # User Experience
 
-This game was created with the main intent to
+This game was created with the main intent to develop quick thinking skills, improve concentration, focus and develop the memory! The brain is a powerful machine that always needs fuel and action. Keep that brain active by playing memory games!
 
 -   ## User stories
 
     -   ### First Time Visitor Goals
         1. As a First Time user, I want to easily understand the main purpose of the site and learn more about the game.
-        2. As a First Time user, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time user, I want to learn exactly how the game works by checking the instructions
+        2. As a First Time user, I want to be able to easily navigate throughout the site to understand and play the game.
+        3. As a First Time user, I want to learn exactly how the game works by checking the instructions.
 
 
     -   ### Returning and Frequent Visitor Goals
@@ -105,9 +105,6 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - [JavaScript](https://www.javascript.com)
    - Used to add interactive, for modal pop-up and for the memory game to run properly.
-
-- [](https://)
-   - 
 
 # Languages Used
 
@@ -208,19 +205,19 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Credits
 
-- 
+- Vertical alignment with help from Stack Overflow: [Link Here](https://stackoverflow.com/questions/47334164/how-to-middle-align-the-content-of-the-div-with-height-100vh/47334256)
 
-- 
+- The Modal pop-up was created with the help from Florin Pop: [Link Here](https://www.youtube.com/watch?v=XH5OW46yO8I)
 
-- 
+- The Memory game itself was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
-- 
+- The Card flip Animation was based on Tutorials Point: - The Memory game itself was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
-- 
+- [Code Institute Course](https://codeinstitute.net/) for the great idea of developing a memory game.
 
-- 
+- [Bootstrap](https://getbootstrap.com) for the large and free libraries.
 
-- 
+- [Font Awesome](https://fontawesome.com/icons) for the huge collection of free icons they offer.
 
 - 
 
@@ -252,7 +249,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Media
 
--   
+-   No external media was used for this project.
 
 ## Acknowledgements
 
