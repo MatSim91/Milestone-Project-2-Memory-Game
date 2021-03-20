@@ -33,20 +33,15 @@ This game was created with the main intent to
 -   ## User stories
 
     -   ### First Time Visitor Goals
-        1. As a First Time user, I want to 
-        2. As a First Time user, I want to 
-        3. As a First Time user, I want to 
+        1. As a First Time user, I want to easily understand the main purpose of the site and learn more about the game.
+        2. As a First Time user, I want to be able to easily navigate throughout the site to find content.
+        3. As a First Time user, I want to learn exactly how the game works by checking the instructions
 
 
-    -   ### Returning Visitor Goals
-        1. As a Returning user, I want to get 
-        2. As a Returning user, I want to 
-        3. As a Returning user, I want to 
-
-    -   ### Frequent User Goals
-        1. As a Frequent user, I want to 
-        2. As a Frequent user, I want to 
-        3. As a Frequent user, I want to 
+    -   ### Returning and Frequent Visitor Goals
+        1. As a Returning user, I want to get keep playing the game and practicing to getter better scores.
+        2. As a Returning user, I want to finish the game with a better time.
+        3. As a Returning user, I want to to complete the game beating all my previous records.
 
 -   ## Design
     -   ### Colour Scheme
