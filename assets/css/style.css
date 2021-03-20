@@ -190,28 +190,60 @@ h1 {
 
 /*--- Game Page ---*/
 
-.game-title-2 {
-    color: #EAEAEA;
-    margin: 50px 0px 0px 0px;
-}
-
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
 .deck {
-	width: 85%;
-	background: #EAEAEA;
+	background: #000000;
 	padding: 1rem;
-	border-radius: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 0 3em;
+}
+
+.deck .card {
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: #EAEAEA;
+	font-size: 0;
+	color: #FFFFFF;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.deck .card.match {
+	cursor: default;
+	background: #00FF00;
+	font-size: 90px;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+
+.deck .card.unmatched {
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	background: #FF0000;
+}
+
+.deck .card.open {
+	transform: rotateY(0);
+	background: #0000FF;
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .8s;
+}
+
+.deck .card.disabled {
+	pointer-events: none;
+}
+
+.deck .card.show {
+	font-size: 90px;
 }
 
 /*--- Stats Panel ---*/
