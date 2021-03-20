@@ -100,8 +100,8 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
     - Cascading Style Sheets as the design of the site.
 
-- [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
-    - Grid allows for a responsive layout across various platforms.
+- [Bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
+    - Loaded Bootstrap to provide all its pre-built classes, grid and font functions.
 
 - [JavaScript](https://www.javascript.com)
    - Used to add interactive, for modal pop-up and for the memory game to run properly.
@@ -157,15 +157,8 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     1. 
     2. 
     3. 
-    4. 
-    5. 
 
--   ### Returning Visitor Goals
-    1. 
-    2. 
-    3. 
-
--   ### Frequent User Goals
+-   ### Returning and Frequent Visitor Goals
     1. 
     2. 
     3. 
@@ -175,7 +168,8 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 1. While creating the Modal pop-up in the index.html page the modal was not appearing on the browser. 
 	1.1 Fix: After closer look it was because bootstrap was interfering with the classes modal-container, modal_container and modal. I have updated these classes name and it fixed the bug.
 
-2.
+2. While trying to load the Font Awesome Icons there was an error and the Icons were not appearing. I was using a CDN as a source to load the Icons.
+    2.1 Fix: I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
 
 # Deployment
 
