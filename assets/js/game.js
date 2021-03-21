@@ -7,6 +7,11 @@ let cards = [...card];
 
 const deck = document.getElementById("card-deck");
 
+let moves = 0;
+let counter = document.querySelector(".moves");
+
+const stars = document.querySelectorAll(".fa-star");
+
 let matchedCard = document.getElementsByClassName("match");
 
 var openedCards = [];
@@ -106,6 +111,35 @@ function enable(){
             matchedCard[i].classList.add("disabled");
         }
     });
+}
+
+/*--- Move counter display, start timer and 3 stars rating ---*/
+
+function moveCounter(){
+    moves++;
+    counter.innerHTML = moves;
+
+    if(moves == 1){
+        second = 0;
+        minute = 0; 
+        hour = 0;
+        startTimer();
+    }
+
+    if (moves > 8 && moves < 12){
+        for( i= 0; i < 3; i++){
+            if(i > 1){
+                stars[i].style.visibility = "collapse";
+            }
+        }
+    }
+    else if (moves > 13){
+        for( i= 0; i < 3; i++){
+            if(i > 0){
+                stars[i].style.visibility = "collapse";
+            }
+        }
+    }
 }
 
 /*--- For loop adding Event Listener ---*/
