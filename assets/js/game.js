@@ -5,7 +5,7 @@
 let card = document.getElementsByClassName("card");
 let cards = [...card];
 
-const deck = document.getElementById("card-deck")
+const deck = document.getElementById("card-deck");
 
 let matchedCard = document.getElementsByClassName("match");
 
@@ -51,7 +51,7 @@ function runGame(){
         [].forEach.call(cards, function(item) {
             deck.appendChild(item);
         });
-        cards[i].classList.remove("show", "open", "match", "diasbled");
+        cards[i].classList.remove("show", "open", "match", "disabled");
     }
 
 /*--- Function to if opened cards match or unmatch ---*/
@@ -83,7 +83,7 @@ function matched(){
 
 function unmatched(){
     openedCards[0].classList.add("unmatched");
-    openedCards[1].classList.add("unmatched")
+    openedCards[1].classList.add("unmatched");
     disable();
     setTimeout(function(){
         openedCards[0].classList.remove("show", "open", "no-event","unatched");
