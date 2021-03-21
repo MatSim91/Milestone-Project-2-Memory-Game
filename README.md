@@ -171,6 +171,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 2. While trying to load the Font Awesome Icons there was an error and the Icons were not appearing. I was using a CDN as a source to load the Icons.
     2.1 Fix: I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
 
+3. While running the JavaScript code through a validator it showed that a few semicolons were missing.
+    3.1 Fix: Added semicolons to the missing lines.
+
 # Deployment
 
 - For this project, I have used the cloud-based IDE [Gitpod](https://gitpod.io/) and [GitHub](http://github.com/) as a free git repository hosting.
