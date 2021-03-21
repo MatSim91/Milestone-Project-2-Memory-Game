@@ -18,7 +18,7 @@ Icon's Memory Game was created for kids from age 3-6 years but even adults can e
 5.  [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
 6.  [Testing](#testing)
     - [Testing User Stories](#testing-user-stories)
-    - [Bugs and Fixes](#Bugs and Fixes)
+    - [Bugs and Fixes](#bugs-and-fixes)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
     - [Code](#code)
@@ -76,7 +76,7 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 # Features
 
-- [](https://) - 
+- Interactive Modal pop-up with instructions and play game options. 
 
 - [](https://) - 
 
