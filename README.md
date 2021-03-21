@@ -116,7 +116,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 1. [Bootstrap 4.5.3:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
-2. [](https://)
+2. [JavaScript Validator](https://jshint.com)
     - 
 3. [Google Fonts:](https://fonts.google.com/)
     - Google fonts was used to import the 
@@ -238,11 +238,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Content
 
-- 
-
-- 
-
-- 
+-  No external content was used for this project.
 
 ## Media
 
