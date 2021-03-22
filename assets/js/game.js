@@ -16,17 +16,9 @@ let matchedCard = document.getElementsByClassName("match");
 
 let starsList = document.querySelectorAll(".stars li");
 let closeicon = document.querySelector(".close");
-let modal = document.getElementById("popup1")
+let modal = document.getElementById("popup1");
 
 var openedCards = [];
-
-/*--- Toggle classes to open and show the cards ---*/
-
-var displayCard = function (){
-    this.classList.toggle("open");
-    this.classList.toggle("show");
-    this.classList.toggle("disabled");
-};
 
 /*--- Function to Shuffle the cards ---*/
 
@@ -61,6 +53,7 @@ function runGame(){
         });
         cards[i].classList.remove("show", "open", "match", "disabled");
     }
+
     moves = 0;
     counter.innerHTML = moves;
     
@@ -68,15 +61,24 @@ function runGame(){
         stars[i].style.color = "#FFD700";
         stars[i].style.visibility = "visible";
     }
+
     second = 0;
     minute = 0; 
     hour = 0;
     var timer = document.querySelector(".timer");
     timer.innerHTML = "0 mins 0 secs";
     clearInterval(interval);
-}
+};
 
-/*--- Function to if opened cards match or unmatch ---*/
+/*--- Toggle classes to open and show the cards ---*/
+
+var displayCard = function (){
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+    this.classList.toggle("disabled");
+};
+
+/*--- Function to check if opened cards match or unmatch ---*/
 
 function cardOpen() {
     openedCards.push(this);
@@ -99,7 +101,7 @@ function matched(){
     openedCards[0].classList.remove("show", "open", "no-event");
     openedCards[1].classList.remove("show", "open", "no-event");
     openedCards = [];
-}
+};
 
 /*--- Adding classes when cards don't match ---*/
 
@@ -159,19 +161,6 @@ function moveCounter(){
     }
 }
 
-/*--- Move counter Start Timer ---*/
-
-function moveCounter(){
-    moves++;
-    counter.innerHTML = moves;
-
-    if(moves == 1){
-        second = 0;
-        minute = 0; 
-        hour = 0;
-        startTimer();
-    }
-
 /*--- Game Timer ---*/
 
 var second = 0, minute = 0; hour = 0;
@@ -216,7 +205,7 @@ function closeModal(){
     });
 }
 
-/*--- Play again Function ---*/
+
 
 function playAgain(){
     modal.classList.remove("show");
@@ -226,5 +215,8 @@ function playAgain(){
 /*--- For loop adding Event Listener ---*/
 
 for (var i = 0; i < cards.length; i++){
-   cards[i].addEventListener("click", displayCard);
+    card = cards[i];
+    card.addEventListener("click", displayCard);
+    card.addEventListener("click", cardOpen);
+    card.addEventListener("click",congratulations);
 };
