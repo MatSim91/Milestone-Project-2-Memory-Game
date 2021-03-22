@@ -54,13 +54,8 @@ This game was created with the main intent to develop quick thinking skills, imp
         ![Color Palette](project/Color-palette.JPG)
 
     -   ### Typography
-	   - 
 
-        - 
-
-        - 
-
-        - 
+        - The font choose for the H1 headers was the Sora font.
 
         - All fonts were imported from [Google Fonts](https://fonts.google.com/).
 
@@ -78,9 +73,9 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Interactive Modal pop-up with instructions and play game options. 
 
-- [](https://) - 
+- Memory game counter moves - It counts the moves everytime the user flips two cards, it adds one move to the counter. If the user can finish the game with lesser moves the better
 
-- [](https://) - 
+- Memory game timer - The timer starts as soon as the user interacts and opens the first two cards.
 
 - [](https://) - 
 

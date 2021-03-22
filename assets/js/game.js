@@ -40,14 +40,13 @@ function shuffle(array) {
     return array;
 };
 
-/*--- Function to run the game ---*/ 
+/*--- Function to run the game and to reset timer and moves ---*/ 
 
 document.body.onload = runGame();
 
 function runGame(){
     
     openedCards = [];
-
     
     cards = shuffle(cards);
     
@@ -58,6 +57,20 @@ function runGame(){
         });
         cards[i].classList.remove("show", "open", "match", "disabled");
     }
+    moves = 0;
+    counter.innerHTML = moves;
+    
+    for (var i= 0; i < stars.length; i++){
+        stars[i].style.color = "#FFD700";
+        stars[i].style.visibility = "visible";
+    }
+    second = 0;
+    minute = 0; 
+    hour = 0;
+    var timer = document.querySelector(".timer");
+    timer.innerHTML = "0 mins 0 secs";
+    clearInterval(interval);
+}
 
 /*--- Function to if opened cards match or unmatch ---*/
 
@@ -140,6 +153,39 @@ function moveCounter(){
             }
         }
     }
+}
+
+/*--- Move counter Start Timer ---*/
+
+function moveCounter(){
+    moves++;
+    counter.innerHTML = moves;
+    //start timer on first click
+    if(moves == 1){
+        second = 0;
+        minute = 0; 
+        hour = 0;
+        startTimer();
+    }
+
+/*--- Game Timer ---*/
+
+var second = 0, minute = 0; hour = 0;
+var timer = document.querySelector(".timer");
+var interval;
+function startTimer(){
+    interval = setInterval(function(){
+        timer.innerHTML = minute+"mins "+second+"secs";
+        second++;
+        if(second == 60){
+            minute++;
+            second=0;
+        }
+        if(minute == 60){
+            hour++;
+            minute = 0;
+        }
+    },1000);
 }
 
 /*--- For loop adding Event Listener ---*/
