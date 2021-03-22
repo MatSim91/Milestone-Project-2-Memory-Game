@@ -14,6 +14,10 @@ const stars = document.querySelectorAll(".fa-star");
 
 let matchedCard = document.getElementsByClassName("match");
 
+let starsList = document.querySelectorAll(".stars li");
+let closeicon = document.querySelector(".close");
+let modal = document.getElementById("popup1")
+
 var openedCards = [];
 
 /*--- Toggle classes to open and show the cards ---*/
@@ -160,7 +164,7 @@ function moveCounter(){
 function moveCounter(){
     moves++;
     counter.innerHTML = moves;
-    //start timer on first click
+
     if(moves == 1){
         second = 0;
         minute = 0; 
@@ -186,6 +190,37 @@ function startTimer(){
             minute = 0;
         }
     },1000);
+}
+
+/*--- Game finished modal pop-up ---*/
+
+function congratulations(){
+    if (matchedCard.length == 16){
+        clearInterval(interval);
+        finalTime = timer.innerHTML;
+        modal.classList.add("show");
+
+        var starRating = document.querySelector(".stars").innerHTML;
+
+        document.getElementById("finalMove").innerHTML = moves;
+        document.getElementById("starRating").innerHTML = starRating;
+        document.getElementById("totalTime").innerHTML = finalTime;
+        closeModal();
+    };
+}
+
+function closeModal(){
+    closeicon.addEventListener("click", function(e){
+        modal.classList.remove("show");
+        runGame();
+    });
+}
+
+/*--- Play again Function ---*/
+
+function playAgain(){
+    modal.classList.remove("show");
+    runGame();
 }
 
 /*--- For loop adding Event Listener ---*/

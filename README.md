@@ -77,7 +77,7 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Memory game timer - The timer starts as soon as the user interacts and opens the first two cards.
 
-- [](https://) - 
+- Interactive Modal pop-up when game is fisished with "Play again" button
 
 - [](https://) - 
 
