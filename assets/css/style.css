@@ -373,7 +373,39 @@ h1 {
    }
 } 
 
-/*--- Media Queries ---*/
+/*--- Media Queries for Larger Screens ---*/
+
+@media (min-width: 768px) {
+	.container {
+		font-size: 22px;
+	}
+
+	.deck {
+		width: 660px;
+		height: 680px;
+	}
+
+	.deck .card {
+		height: 125px;
+		width: 125px;
+	}
+
+	.popup {
+		width: 60%;
+    }
+}
+
+/*--- Media Queries for Smaller Screens ---*/
+
+@media (max-width: 768px) {
+    .deck .card.show {
+        font-size: 35px;
+    }
+
+    .deck .card.match {
+        font-size: 35px;
+    }
+}
 
 @media (max-width: 390px) {
     .btn-play-game {
@@ -382,4 +414,15 @@ h1 {
     .game-title {
         margin: 75px 0px -150px 0px;
     }
+}
+
+@media (max-width: 320px) {
+	.deck {
+		width: 85%;
+	}
+
+	.deck .card {
+		height: 4.7rem;
+		width: 4.7rem;
+	}
 }
