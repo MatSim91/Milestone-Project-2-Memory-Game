@@ -49,8 +49,6 @@ This game was created with the main intent to develop quick thinking skills, imp
 
         - The main colors used are Red (#FF0000), Yellow (#FFFF00), Blue (#0000FF), Orange (#FFA500), Green (#00FF00), Violet (#EE82EE), Black (#000000), White (#FFFFFF), and Grey (#EAEAEA).
 
-        - 
-
         ![Color Palette](project/Color-palette.JPG)
 
     -   ### Typography
@@ -79,7 +77,7 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Interactive Modal pop-up when game is fisished with "Play again" button
 
-- [](https://) - 
+- Stars score rating feature based on the number of moves that were performed by player. If moves are less than eight the player gets three stars. If moves are beetween nine and thirteen player gets two stars. Anything above forteen moves player gets one star.
 
 - [](https://) - 
 
@@ -111,24 +109,32 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 1. [Bootstrap 4.5.3:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
+
 2. [JavaScript Validator](https://jshint.com)
-    - 
+    - Used to check and validate all JavaScript code to check for any typos or errors.
+
 3. [Google Fonts:](https://fonts.google.com/)
     - Google fonts was used to import the 
-4. [](https://)
-    - 
-5. [](https://)
-    - 
-6. [Git](https://git-scm.com/)
+
+4. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-7. [GitHub:](https://github.com/)
+
+5. [GitHub:](https://github.com/)
     - GitHub was used to store the projects code after being pushed from Git.
-8. [Balsamiq:](https://balsamiq.com/)
+
+6. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [Wireframes](#wireframes) during the design process.
-9. [](https://)
-    - 
-10. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+
+7. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Used for testing and fixing website bugs.
+
+8. 
+    
+9.
+    -
+
+10. 
+    - 
 
 # Testing
 
@@ -166,8 +172,11 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 2. While trying to load the Font Awesome Icons there was an error and the Icons were not appearing. I was using a CDN as a source to load the Icons.
     2.1 Fix: I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
 
-3. While running the JavaScript code through a validator it showed that a few semicolons were missing.
-    3.1 Fix: Added semicolons to the missing lines.
+3. While running the JavaScript code through a validator it showed that a few semicolons were missing and a few typos.
+    3.1 Fix: Added semicolons to the missing lines and fixed the typos.
+
+4. While trying to run the game it was not running properly.
+    4.1 Fix: While checking why I the game source on the gamt.html page was incorrect. After I updated it fixed the problem.
 
 # Deployment
 
@@ -241,7 +250,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Acknowledgements
 
--   
+-   My mentor Akshat for all his help and ideas.
 
 -   
 

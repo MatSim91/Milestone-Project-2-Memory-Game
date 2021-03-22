@@ -199,7 +199,7 @@ function congratulations(){
 }
 
 function closeModal(){
-    closeicon.addEventListener("click", function(e){
+    closeicon.addEventListener("click", function(){
         modal.classList.remove("show");
         runGame();
     });
