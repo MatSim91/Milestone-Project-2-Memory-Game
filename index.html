@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color's Memory Game</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color's Memory Game</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-</head>
-<body>
-    <main>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet" />
 
-<!-- Game Title -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    </head>
+    <body>
+        <main>
+            <!-- Game Title -->
 
-<div class="container-fluid container-wrapper">
-	<div class="row center">
-		<div class="col-12 text-center game-title">
-            <h1 class="page-title"><span class="c-color">C</span><span class="o-color">o</span><span class="l-color">l</span><span class="o-color">o</span><span class="r-color">r</span>'<span class="s-color">s</span> <span class="memory-title">Memory Game</span></h1>
-		</div>
-	</div>
-</div>
-
-<!-- Instructions and Play game Option and Modal Pop-up with the game instructions explained -->
-
-<div class="mid-buttons">
-    <div class="row">
-        <div class="col-12 text-center">
-            <a href="game.html" class="btn btn-default btn-lg btn-play-game">Play Game</a>
-        </div>
-        <div class="col-12 text-center">
-            <button class="btn btn-default btn-lg btn-instructions" id="open">Instructions</button>
-            <div class="modal-container-instructions" id="modal_container_ins">
-                <div class="modal-ins text-dark">
-                    <h1 class="text-center text-dark">Instructions:</h1>
-                    <hr>
-                    <p class="text-center"><h4><b>Objective:</b> Find all the card pairs of the same icon.</h4></p>
-                    <p><b>1.</b> Click on two cards of your choice to reveal them:</p>
-                    <p class="space-indentation"><span class="dark-green-color"><b>If the icons match:</b></span> You choose it right 😁! The cards will stay face up! </p>
-                    <p class="space-indentation"><span class="i-color"><b>If the icons don't match:</b></span> Sorry, you have chosen the wrong pair ☹. Try to memorize the card's icon location.</p>
-                    <p><b>2.</b> Continue choosing two card's and try to memorize their icons to pick their pair colors.</p>
-                    <p><b>3.</b> The game will finish once you have found the icon pair of all the sixteen card's.</p>
-                    <button class="btn close-button" id="close">Close</button>
-                    <a href="game.html" class="btn btn-default btn-lg modal-play-game">Play Game</a>
+            <div class="container-fluid container-wrapper">
+                <div class="row center">
+                    <div class="col-12 text-center game-title">
+                        <h1 class="page-title">
+                            <span class="c-color">C</span><span class="o-color">o</span><span class="l-color">l</span><span class="o-color">o</span><span class="r-color">r</span>'<span class="s-color">s</span>
+                            <span class="memory-title">Memory Game</span>
+                        </h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-    </main>
 
-    <script type="text/javascript" src="assets/js/script.js"></script>
-</body>
+            <!-- Instructions and Play game Option and Modal Pop-up with the game instructions explained -->
+
+            <div class="mid-buttons">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="game.html" class="btn btn-default btn-lg btn-play-game">Play Game</a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-default btn-lg btn-instructions" id="open">Instructions</button>
+                        <div class="modal-container-instructions" id="modal_container_ins">
+                            <div class="modal-ins text-dark">
+                                <h1 class="text-center text-dark">Instructions:</h1>
+                                <hr />
+                                <p class="text-center"></p>
+                                <h4><b>Objective:</b> Find all the card pairs of the same color.</h4>
+                                <p><b>1.</b> Click on two cards of your choice to reveal them:</p>
+                                <p class="space-indentation">
+                                    <span><b>If the colors match:</b></span> You choose it right 😁! The cards will stay face up!
+                                </p>
+                                <p class="space-indentation">
+                                    <span><b>If the colors don't match:</b></span> Sorry, you have chosen the wrong color 😕. Try to memorize the card's color location.
+                                </p>
+                                <p><b>2.</b> Continue choosing two card's and try to memorize their colors to pick their pair colors.</p>
+                                <p><b>3.</b> The game will finish once you have found the color pair of all the sixteen card's.</p>
+                                <button class="btn close-button" id="close">Close</button>
+                                <a href="game.html" class="btn btn-default btn-lg modal-play-game">Play Game</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
 </html>
