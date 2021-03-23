@@ -158,25 +158,25 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 ## Testing User Stories
 
 -   ### First Time Visitor Goals
-    1. 
-    2. 
-    3. 
+    1. As a first time user entering the site the game title already shows it is a memory game and there is already a "Instructions" button for the user to click and learn more about the game.
+    2. As a first time user the site is easy to navigate with the buttons being responsive and the "Instructions" and "Play Game" button are straight forward in telling me what to expect for my click action.
+    3. As a first time user wanting to know exactly how the game works I click on the "Instructions" option to read the rules
 
 -   ### Returning and Frequent Visitor Goals
-    1. 
-    2. 
-    3. 
+    1. As a return user that keeps playing a lot I can keep resetting my score stats to try to get better scores.
+    2. As a return user I can keep checking the game timer on the game stats bar to try and finish the game with a better time.
+    3. As a return user I can keep checking my moves and time to give me a clear view how my score is compared with my previous stats, I can also use the 3 stars rating as an easier way to compare my previous score.
 
 ## Bugs and Fixes
 
 1. While creating the Modal pop-up in the index.html page the modal was not appearing on the browser. 
-	1.1 Fix: After closer look it was because bootstrap was interfering with the classes modal-container, modal_container and modal. I have updated these classes name and it fixed the bug.
+	- 1.1 Fix: After closer look it was because bootstrap was interfering with the classes modal-container, modal_container and modal. I have updated these classes name and it fixed the bug.
 
 2. While trying to load the Font Awesome Icon there was an error and the Icon was not appearing. I was using a CDN as a source to load the Icon.
-    2.1 Fix: I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
+    - 2.1 Fix: I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
 
 3. While running the JavaScript code through a validator it showed that a few semicolons were missing and a few typos.
-    3.1 Fix: Added semicolons to the missing lines and fixed the typos.
+    - 3.1 Fix: Added semicolons to the missing lines and fixed the typos.
 
 4. While trying to run the game it was not running properly.
     4.1 Fix: While checking why I the game source on the gamt.html page was incorrect. After I updated it fixed the problem.
@@ -185,7 +185,11 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     5.1: Fixed typo with the onclick that was calling the runGame function.
 # Deployment
 
-- GitHub Pages: Under the repository page: Click on Settings - Scroll down to the "GitHub Pages" section - Select the Source Branch - Click Save.
+- GitHub Pages: Under the repository page: 
+        - Click on Settings 
+        - Scroll down to the "GitHub Pages" section 
+        - Select the Source Branch 
+        - Click Save.
 
 - For this project, I have used the cloud-based IDE [Gitpod](https://gitpod.io/) and [GitHub](http://github.com/) as a free git repository hosting.
 
@@ -261,4 +265,4 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 -   Thanks to the Code Instute Tutor Support for helping adding me more hours on GitPod so fast!
 
--   
+-   Slack community peers for helping with general questions.
