@@ -2,8 +2,8 @@
 
 /*--- Declared Variables ---*/
 
-let card = document.getElementsByClassName("card");
-let cards = [...card];
+let cardList = document.getElementsByClassName("card");
+let cards = [...cardList];
 
 const deck = document.getElementById("card-deck");
 
@@ -40,8 +40,7 @@ function shuffle(array) {
 
 document.body.onload = runGame();
 
-function runGame(){
-    
+function showCards() {
     openedCards = [];
     
     cards = shuffle(cards);
@@ -53,14 +52,24 @@ function runGame(){
         });
         cards[i].classList.remove("show", "open", "match", "disabled");
     }
+}
 
-    moves = 0;
-    counter.innerHTML = moves;
-    
+function initStars() {
     for (var i= 0; i < stars.length; i++){
         stars[i].style.color = "#FFD700";
         stars[i].style.visibility = "visible";
     }
+}
+
+function runGame(){
+    
+    showCards();
+
+    moves = 0;
+    counter.innerHTML = moves;
+
+    initStars();
+
 
     second = 0;
     minute = 0; 
