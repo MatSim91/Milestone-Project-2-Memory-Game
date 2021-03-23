@@ -252,6 +252,6 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 -   My mentor Akshat for all his help and ideas.
 
--   
+-   Thanks to the Code Instute Tutor Support for helping adding me more hours on GitPod so fast!
 
 -   
