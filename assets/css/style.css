@@ -201,7 +201,7 @@ h1 {
 	background: #EAEAEA;
 	font-size: 0;
 	color: #FFFFFF;
-	border-radius: 10px;
+	border-radius: 20px;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -210,8 +210,7 @@ h1 {
 
 .deck .card.match {
 	cursor: default;
-	background: #00FF00;
-	font-size: 90px;
+	font-size: 130px;
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 }
@@ -219,12 +218,10 @@ h1 {
 .deck .card.unmatched {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
-	background: #FF0000;
 }
 
 .deck .card.open {
 	transform: rotateY(0);
-	background: #0000FF;
 	cursor: default;
 	animation-name: flipInY;
 	-webkit-backface-visibility: visible !important;
@@ -237,7 +234,39 @@ h1 {
 }
 
 .deck .card.show {
-	font-size: 90px;
+	font-size: 130px;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.yellow {
+    color: #FFFF00;
+}
+
+.green {
+    color: #00FF00;
+}
+
+.blue {
+    color: #0000FF;
+}
+
+.orange {
+    color: #FFA500;
+}
+
+.purple {
+    color: #800080;
+}
+
+.pink {
+    color: #FF69B4;
+}
+
+.gray {
+    color: #808080;
 }
 
 /*--- Stats Panel ---*/
@@ -400,11 +429,11 @@ h1 {
 
 @media (max-width: 768px) {
     .deck .card.show {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .deck .card.match {
-        font-size: 35px;
+        font-size: 60px;
     }
 }
 
