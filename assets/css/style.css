@@ -1,58 +1,58 @@
 /*--- Generic Rules ---*/
 
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html,
 body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     padding: 0;
-    color: #EAEAEA;
+    color: #eaeaea;
 }
 
 body {
-	background: #000000;
+    background: #000000;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
-    color: #EAEAEA;
+    color: #eaeaea;
     font-family: Sora;
 }
 
 .c-color {
-    color: #FF0000;
+    color: #ff0000;
 }
 
 .o-color {
-    color: #FFFF00;
+    color: #ffff00;
 }
 
 .l-color {
-    color: #00FF00;
+    color: #00ff00;
 }
 
 .r-color {
-    color: #0000FF;
+    color: #0000ff;
 }
 
 .s-color {
-    color: 	#FFA500;
+    color: #ffa500;
 }
 
 .dark-green-color {
@@ -62,7 +62,7 @@ h1 {
 /*--- Index Page ---*/
 
 .game-title {
-    color: #EAEAEA;
+    color: #eaeaea;
     margin: 150px 0px -250px 0px;
 }
 
@@ -81,35 +81,34 @@ h1 {
 }
 
 .row {
-    width:100%;
+    width: 100%;
 }
 
 .btn-instructions {
     background-color: #000000;
-    color: #FFFF00;
-    border: #FFFF00 solid 2px;
+    color: #ffff00;
+    border: #ffff00 solid 2px;
     border-radius: 30px;
     font-size: 25px;
 }
 
 .btn-instructions:hover {
-    background-color: #FFFF00;
+    background-color: #ffff00;
     color: #000000;
     min-width: 110px;
-    
 }
 
 .btn-play-game {
     background-color: #000000;
-    color: #00FF00;
-    border: #00FF00 solid 2px;
+    color: #00ff00;
+    border: #00ff00 solid 2px;
     border-radius: 50px;
     font-size: 50px;
     margin: 22px;
 }
 
 .btn-play-game:hover {
-    background-color: #00FF00;
+    background-color: #00ff00;
     color: #000000;
     min-width: 110px;
 }
@@ -135,7 +134,7 @@ h1 {
 }
 
 .modal-ins {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     width: 600px;
     max-width: 100%;
     padding: 25px 40px;
@@ -159,7 +158,7 @@ h1 {
     color: #000000;
     border: #000000 solid 2px;
     border-radius: 25px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     padding: 10px 25px;
     font-size: 20px;
 }
@@ -170,7 +169,7 @@ h1 {
 }
 
 .modal-play-game {
-    background-color: #00FF00;
+    background-color: #00ff00;
     color: #000000;
     border: #000000 solid 2px;
     border-radius: 25px;
@@ -186,76 +185,76 @@ h1 {
 /*--- Game Page ---*/
 
 .deck {
-	background: #000000;
-	padding: 1rem;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0 0 3em;
+    background: #000000;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 3em;
 }
 
 .deck .card {
-	height: 3.7rem;
-	width: 3.7rem;
-	margin: 0.2rem 0.2rem;
-	background: #EAEAEA;
-	font-size: 0;
-	color: #FFFFFF;
-	border-radius: 20px;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    height: 3.7rem;
+    width: 3.7rem;
+    margin: 0.2rem 0.2rem;
+    background: #eaeaea;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .deck .card.match {
-	cursor: default;
-	font-size: 130px;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
+    cursor: default;
+    font-size: 130px;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
 }
 
 .deck .card.unmatched {
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
 }
 
 .deck .card.open {
-	transform: rotateY(0);
-	cursor: default;
-	animation-name: flipInY;
-	-webkit-backface-visibility: visible !important;
-	backface-visibility: visible !important;
-	animation-duration: .8s;
+    transform: rotateY(0);
+    cursor: default;
+    animation-name: flipInY;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: 0.8s;
 }
 
 .deck .card.disabled {
-	pointer-events: none;
+    pointer-events: none;
 }
 
 .deck .card.show {
-	font-size: 130px;
+    font-size: 130px;
 }
 
 .red {
-    color: #FF0000;
+    color: #ff0000;
 }
 
 .yellow {
-    color: #FFFF00;
+    color: #ffff00;
 }
 
 .green {
-    color: #00FF00;
+    color: #00ff00;
 }
 
 .blue {
-    color: #0000FF;
+    color: #0000ff;
 }
 
 .orange {
-    color: #FFA500;
+    color: #ffa500;
 }
 
 .purple {
@@ -263,7 +262,7 @@ h1 {
 }
 
 .pink {
-    color: #FF69B4;
+    color: #ff69b4;
 }
 
 .gray {
@@ -273,162 +272,162 @@ h1 {
 /*--- Stats Panel ---*/
 
 .stats-panel {
-	text-align: left;
-	margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .stats-panel .stars {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	margin: 0 5px 0 0;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
 }
 
 .stats-panel .stars li {
-	list-style: none;
-	display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 
 .stats-panel .restart {
-	float: right;
+    float: right;
     cursor: pointer;
-    color: #EAEAEA;
+    color: #eaeaea;
 }
 
 .fa-star {
-	color: #FFFF00;
+    color: #ffff00;
 }
 
 .moves {
-    color: #EAEAEA;
+    color: #eaeaea;
 }
 
 .timer {
-	display: inline-block;
+    display: inline-block;
     margin: 0 1rem;
-    color: #EAEAEA;
+    color: #eaeaea;
 }
 
 /*--- Game Finish Modal Pop-up ---*/
 
 .popup {
-	margin: 70px auto;
-	padding: 20px;
-	background: #EAEAEA;
-	border-radius: 5px;
-	width: 85%;
-	position: relative;
-	transition: all 5s ease-in-out;
+    margin: 70px auto;
+    padding: 20px;
+    background: #eaeaea;
+    border-radius: 5px;
+    width: 85%;
+    position: relative;
+    transition: all 5s ease-in-out;
 }
 
 .popup .content-1,
 .content-2 {
-	max-height: 30%;
-	overflow: auto;
-	text-align: center;
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
 }
 
 .popup h2 {
-	margin-top: 0;
-	color: #000000;
+    margin-top: 0;
+    color: #000000;
 }
 
 #starRating li {
-	display: inline-block;
+    display: inline-block;
 }
 
 .show {
-	visibility: visible !important;
-	opacity: 100 !important;
+    visibility: visible !important;
+    opacity: 100 !important;
 }
 
 #play-again {
-	background-color: #000000;
-	padding: 0.7rem 1rem;
-	font-size: 1.1rem;
-	display: block;
-	margin: 0 auto;
-	width: 50%;
-	color: #FFFFFF;
-	border-radius: 30px;
+    background-color: #000000;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    color: #ffffff;
+    border-radius: 30px;
 }
 
 #play-again:hover {
     color: #000000;
     border: solid 1px #000000;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
 }
 
 .overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .overlay:target {
-	visibility: visible;
-	opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .popup .close {
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #000000;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
 }
 
 .popup .close:hover {
-	color: #E5F720;
+    color: #e5f720;
 }
 
 /*--- Card Flip Animation ---*/
 
 @keyframes flipInY {
-   0% {
-      transform: perspective(400px) rotateY(90deg);
-      opacity: 0;
-   }
-   40% {
-      transform: perspective(400px) rotateY(-10deg);
-   }
-   70% {
-      transform: perspective(400px) rotateY(10deg);
-   }
-   100% {
-      transform: perspective(400px) rotateY(0deg);
-      opacity: 1;
-   }
-} 
+    0% {
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotateY(-10deg);
+    }
+    70% {
+        transform: perspective(400px) rotateY(10deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+    }
+}
 
 /*--- Media Queries for Larger Screens ---*/
 
 @media (min-width: 768px) {
-	.container {
-		font-size: 22px;
-	}
+    .container {
+        font-size: 22px;
+    }
 
-	.deck {
-		width: 660px;
-		height: 680px;
-	}
+    .deck {
+        width: 660px;
+        height: 680px;
+    }
 
-	.deck .card {
-		height: 125px;
-		width: 125px;
-	}
+    .deck .card {
+        height: 125px;
+        width: 125px;
+    }
 
-	.popup {
-		width: 60%;
+    .popup {
+        width: 60%;
     }
 }
 
@@ -442,6 +441,9 @@ h1 {
     .deck .card.match {
         font-size: 60px;
     }
+    .deck .card {
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -454,12 +456,12 @@ h1 {
 }
 
 @media (max-width: 320px) {
-	.deck {
-		width: 85%;
-	}
+    .deck {
+        width: 85%;
+    }
 
-	.deck .card {
-		height: 4.7rem;
-		width: 4.7rem;
-	}
+    .deck .card {
+        height: 4.7rem;
+        width: 4.7rem;
+    }
 }
