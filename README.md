@@ -1,10 +1,10 @@
-<h1 align="center">Milestone Project 2 - Icon's Memory Game</h1>
+<h1 align="center">Milestone Project 2 - Color's Memory Game</h1>
 
 ![Icon's Mockup](project/o-mockup.JPG)
 
 [Click here to view the live project :link:](https://matsim91.github.io/)
 
-Icon's Memory Game was created for kids from age 3-6 years but even adults can enjoy playing! Memory games help building thinking skills, improving the concentration, improving the memory, attention, and persistence. The benefits are wide, especially as everyone needs to have the brain constantly stimulated by learning new things so this is a great experience for kids while they can have fun playing.
+Color's Memory Game was created for kids from age 3-6 years but even adults can enjoy playing! Memory games help building thinking skills, improving the concentration, improving the memory, attention, and persistence. The benefits are wide, especially as everyone needs to have the brain constantly stimulated by learning new things so this is a great experience for kids while they can have fun playing.
 
 # Table Of Contents
 
@@ -169,7 +169,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 1. While creating the Modal pop-up in the index.html page the modal was not appearing on the browser. 
 	1.1 Fix: After closer look it was because bootstrap was interfering with the classes modal-container, modal_container and modal. I have updated these classes name and it fixed the bug.
 
-2. While trying to load the Font Awesome Icons there was an error and the Icons were not appearing. I was using a CDN as a source to load the Icons.
+2. While trying to load the Font Awesome Icon there was an error and the Icon was not appearing. I was using a CDN as a source to load the Icon.
     2.1 Fix: I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
 
 3. While running the JavaScript code through a validator it showed that a few semicolons were missing and a few typos.
