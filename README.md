@@ -152,6 +152,10 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
     -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatsim91.github.io%2FMilestone-Project-1-One-Porcent%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - I have validated CSS using Direct Input and by URL. OBS: There is 10 warning due to some -webkits added on CSS, they were imported from external libraries and are needed to add interactivity.
 
+    - [Web Formatter](https://webformatter.com/) - Was also used for checking for any errors in HTML and CSS.
+
+    - [JavaScript Validator](https://jshint.com) - Used for checking for JavaScript errors.
+
 ## Testing User Stories
 
 -   ### First Time Visitor Goals
@@ -220,7 +224,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - [Font Awesome](https://fontawesome.com/icons) for the huge collection of free icons they offer.
 
-- 
+- [Web Formatter](https://webformatter.com/) - Used for formatting HTML, CSS and Javascript and also to check for errors.
 
 - 
 

@@ -1,123 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color's Memory Game</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color's Memory Game</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c09d831fff.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-</head>
-<body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/c09d831fff.js" crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    </head>
+    <body>
+        <!-- Game Title -->
 
-<!-- Game Title -->
-
-<div class="container-fluid container-wrapper">
-	<div class="row center">
-		<div class="col-12 text-center">
-            <h1 class="page-title"><span class="c-color">C</span><span class="o-color">o</span><span class="l-color">l</span><span class="o-color">o</span><span class="r-color">r</span>'<span class="s-color">s</span> <span class="memory-title">Memory Game</span></h1>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-
-    <!-- Memory game cards -->
-
-    <ul class="deck" id="card-deck">
-        <li class="card" type="red">
-            <i class="fas fa-square red"></i>
-        </li>
-        <li class="card" type="yellow">
-            <i class="fas fa-square yellow"></i>
-        </li>
-        <li class="card" type="green">
-            <i class="fas fa-square green"></i>
-        </li>
-        <li class="card" type="blue" >
-            <i class="fas fa-square blue"></i>
-        </li>
-        <li class="card" type="orange">
-            <i class="fas fa-square orange"></i>
-        </li>
-        <li class="card" type="green">
-            <i class="fas fa-square green"></i>
-        </li>
-        <li class="card" type="purple">
-            <i class="fas fa-square purple"></i>
-        </li>
-        <li class="card" type="pink">
-            <i class="fas fa-square pink"></i>
-        </li>
-        <li class="card" type="red">
-            <i class="fas fa-square red"></i>
-        </li>
-        <li class="card" type="gray">
-            <i class="fas fa-square gray"></i>
-        </li>
-        <li class="card" type="purple">
-            <i class="fas fa-square purple"></i>
-        </li>
-        <li class="card" type="gray">
-            <i class="fas fa-square gray"></i>
-        </li>
-        <li class="card" type="blue">
-            <i class="fas fa-square blue"></i>
-        </li>
-        <li class="card" type="pink">
-            <i class="fas fa-square pink"></i>
-        </li>
-        <li class="card" type="yellow">
-            <i class="fas fa-square yellow"></i>
-        </li>
-        <li class="card" type="orange">
-        <i class="fas fa-square orange"></i>
-        </li>
-    </ul>
-
-    <!-- Stats Panel -->
-
-    <section class="stats-panel">
-        <ul class="stars">
-            <li><i class="fas fa-star"></i></li>
-            <li><i class="fas fa-star"></i></li>
-            <li><i class="fas fa-star"></i></li>
-        </ul>
-        <span class="moves">0</span> Move(s)
-
-        <div class="timer"> </div>
-
-        <div class="restart" onclick="runGame()">
-            <i class="fas fa-redo"></i>
-        </div>
-    </section>
-
-    <!-- Game Finish Modal Pop-up -->
-
-    <div id="popup1" class="overlay text-dark">
-        <div class="popup">
-            <h2 class="text-center">You Win!!</h2>
-            <a class="close" href="#" >×</a>
-            <div class="content-1">
-                Congratulations, you have won the game!
+        <div class="container-fluid container-wrapper">
+            <div class="row center">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">
+                        <span class="c-color">C</span><span class="o-color">o</span><span class="l-color">l</span><span class="o-color">o</span><span class="r-color">r</span>'<span class="s-color">s</span>
+                        <span class="memory-title">Memory Game</span>
+                    </h1>
+                </div>
             </div>
-            <div class="content-2">
-                <p>You have made <span id="finalMove"> </span> moves </p>
-                <p>in <span id="totalTime"> </span> </p>
-                <p class="text-center">Your Rating is:  <span id="starRating"></span></p>
-            </div>
-            <button id="play-again" onclick="playAgain()">
-                Play again
-            </button>
         </div>
-    </div>
 
-</div>
+        <div class="container">
+            <!-- Memory game cards -->
 
-<script type="text/javascript" src="assets/js/game.js"></script>
-</body>
+            <ul class="deck" id="card-deck">
+                <li class="card" type="red">
+                    <i class="fas fa-square red"></i>
+                </li>
+                <li class="card" type="yellow">
+                    <i class="fas fa-square yellow"></i>
+                </li>
+                <li class="card" type="green">
+                    <i class="fas fa-square green"></i>
+                </li>
+                <li class="card" type="blue">
+                    <i class="fas fa-square blue"></i>
+                </li>
+                <li class="card" type="orange">
+                    <i class="fas fa-square orange"></i>
+                </li>
+                <li class="card" type="green">
+                    <i class="fas fa-square green"></i>
+                </li>
+                <li class="card" type="purple">
+                    <i class="fas fa-square purple"></i>
+                </li>
+                <li class="card" type="pink">
+                    <i class="fas fa-square pink"></i>
+                </li>
+                <li class="card" type="red">
+                    <i class="fas fa-square red"></i>
+                </li>
+                <li class="card" type="gray">
+                    <i class="fas fa-square gray"></i>
+                </li>
+                <li class="card" type="purple">
+                    <i class="fas fa-square purple"></i>
+                </li>
+                <li class="card" type="gray">
+                    <i class="fas fa-square gray"></i>
+                </li>
+                <li class="card" type="blue">
+                    <i class="fas fa-square blue"></i>
+                </li>
+                <li class="card" type="pink">
+                    <i class="fas fa-square pink"></i>
+                </li>
+                <li class="card" type="yellow">
+                    <i class="fas fa-square yellow"></i>
+                </li>
+                <li class="card" type="orange">
+                    <i class="fas fa-square orange"></i>
+                </li>
+            </ul>
+
+            <!-- Stats Panel -->
+
+            <section class="stats-panel">
+                <ul class="stars">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                </ul>
+                <span class="moves">0</span> Move(s)
+
+                <div class="timer"></div>
+
+                <div class="restart" onclick="runGame()">
+                    <i class="fas fa-redo"></i>
+                </div>
+            </section>
+
+            <!-- Game Finish Modal Pop-up -->
+
+            <div id="popup1" class="overlay text-dark">
+                <div class="popup">
+                    <h2 class="text-center">You Win!!</h2>
+                    <a class="close" href="#">×</a>
+                    <div class="content-1">
+                        Congratulations, you have won the game!
+                    </div>
+                    <div class="content-2">
+                        <p>You have made <span id="finalMove"> </span> moves</p>
+                        <p>in <span id="totalTime"> </span></p>
+                        <p class="text-center">Your Rating is: <span id="starRating"></span></p>
+                    </div>
+                    <button id="play-again" onclick="playAgain()">
+                        Play again
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/game.js"></script>
+    </body>
 </html>
