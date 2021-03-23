@@ -2,7 +2,7 @@
 
 ![Icon's Mockup](project/o-mockup.JPG)
 
-[Click here to view the live project :link:](https://matsim91.github.io/)
+[Click here to view the live project :link:](https://matsim91.github.io/Milestone-Project-2-Memory-Game/)
 
 Color's Memory Game was created for kids from age 3-6 years but even adults can enjoy playing! Memory games help building thinking skills, improving the concentration, improving the memory, attention, and persistence. The benefits are wide, especially as everyone needs to have the brain constantly stimulated by learning new things so this is a great experience for kids while they can have fun playing.
 
@@ -62,9 +62,9 @@ This game was created with the main intent to develop quick thinking skills, imp
 
     - The wireframe was developed using [balsamiq](https://balsamiq.com/).
 
-    - Landing Page (index.html) Wireframe - [View](https://github.com/MatSim91/Milestone-Project-1-One-Porcent/blob/master/project/wireframes/e.JPG)
+    - Landing Page wireframe (index.html) Wireframe - [View](https://github.com/MatSim91/Milestone-Project-2-Memory-Game/blob/master/project/Landing-page-wireframe.JPG)
 
-    - Game page (game.html) - [View](https://github.com/MatSim91/Milestone-Project-1-One-Porcent/blob/master/project/wireframes/w-donate.JPG)
+    - Game page Wireframe (game.html) - [View](https://github.com/MatSim91/Milestone-Project-2-Memory-Game/blob/master/project/Memory-game-wireframe.JPG)
 
 
 # Features
