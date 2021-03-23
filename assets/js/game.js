@@ -23,7 +23,9 @@ var openedCards = [];
 /*--- Function to Shuffle the cards ---*/
 
 function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    var currentIndex = array.length,
+        temporaryValue,
+        randomIndex;
 
     while (currentIndex !== 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
@@ -34,20 +36,20 @@ function shuffle(array) {
     }
 
     return array;
-};
+}
 
-/*--- Function to run the game and to reset timer and moves ---*/ 
+/*--- Function to run the game and to reset timer and moves ---*/
 
 document.body.onload = runGame();
 
 function showCards() {
     openedCards = [];
-    
+
     cards = shuffle(cards);
-    
-    for (var i = 0; i < cards.length; i++){
+
+    for (var i = 0; i < cards.length; i++) {
         deck.innerHTML = "";
-        [].forEach.call(cards, function(item) {
+        [].forEach.call(cards, function (item) {
             deck.appendChild(item);
         });
         cards[i].classList.remove("show", "open", "match", "disabled");
@@ -55,14 +57,13 @@ function showCards() {
 }
 
 function initStars() {
-    for (var i= 0; i < stars.length; i++){
+    for (var i = 0; i < stars.length; i++) {
         stars[i].style.color = "#FFD700";
         stars[i].style.visibility = "visible";
     }
 }
 
-function runGame(){
-    
+function runGame() {
     showCards();
 
     moves = 0;
@@ -70,18 +71,17 @@ function runGame(){
 
     initStars();
 
-
     second = 0;
-    minute = 0; 
+    minute = 0;
     hour = 0;
     var timer = document.querySelector(".timer");
     timer.innerHTML = "0 mins 0 secs";
     clearInterval(interval);
-};
+}
 
 /*--- Toggle classes to open and show the cards ---*/
 
-var displayCard = function (){
+var displayCard = function () {
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
@@ -92,50 +92,50 @@ var displayCard = function (){
 function cardOpen() {
     openedCards.push(this);
     var len = openedCards.length;
-    if(len === 2){
+    if (len === 2) {
         moveCounter();
-        if(openedCards[0].type === openedCards[1].type){
+        if (openedCards[0].type === openedCards[1].type) {
             matched();
         } else {
             unmatched();
         }
     }
-};
+}
 
 /*--- Adding classes when cards match ---*/
 
-function matched(){
+function matched() {
     openedCards[0].classList.add("match", "disabled");
     openedCards[1].classList.add("match", "disabled");
     openedCards[0].classList.remove("show", "open", "no-event");
     openedCards[1].classList.remove("show", "open", "no-event");
     openedCards = [];
-};
+}
 
 /*--- Adding classes when cards don't match ---*/
 
-function unmatched(){
+function unmatched() {
     openedCards[0].classList.add("unmatched");
     openedCards[1].classList.add("unmatched");
     disable();
-    setTimeout(function(){
-        openedCards[0].classList.remove("show", "open", "no-event","unmatched");
-        openedCards[1].classList.remove("show", "open", "no-event","unmatched");
+    setTimeout(function () {
+        openedCards[0].classList.remove("show", "open", "no-event", "unmatched");
+        openedCards[1].classList.remove("show", "open", "no-event", "unmatched");
         enable();
         openedCards = [];
-    },1100);
+    }, 1100);
 }
 
-function disable(){
-    Array.prototype.filter.call(cards, function(card){
-        card.classList.add('disabled');
+function disable() {
+    Array.prototype.filter.call(cards, function (card) {
+        card.classList.add("disabled");
     });
 }
 
-function enable(){
-    Array.prototype.filter.call(cards, function(card){
-        card.classList.remove('disabled');
-        for(var i = 0; i < matchedCard.length; i++){
+function enable() {
+    Array.prototype.filter.call(cards, function (card) {
+        card.classList.remove("disabled");
+        for (var i = 0; i < matchedCard.length; i++) {
             matchedCard[i].classList.add("disabled");
         }
     });
@@ -143,27 +143,26 @@ function enable(){
 
 /*--- Move counter display, start timer and 3 stars rating ---*/
 
-function moveCounter(){
+function moveCounter() {
     moves++;
     counter.innerHTML = moves;
 
-    if(moves == 1){
+    if (moves == 1) {
         second = 0;
-        minute = 0; 
+        minute = 0;
         hour = 0;
         startTimer();
     }
 
-    if (moves > 8 && moves < 12){
-        for( i= 0; i < 3; i++){
-            if(i > 1){
+    if (moves > 8 && moves < 12) {
+        for (i = 0; i < 3; i++) {
+            if (i > 1) {
                 stars[i].style.visibility = "collapse";
             }
         }
-    }
-    else if (moves > 13){
-        for( i= 0; i < 3; i++){
-            if(i > 0){
+    } else if (moves > 13) {
+        for (i = 0; i < 3; i++) {
+            if (i > 0) {
                 stars[i].style.visibility = "collapse";
             }
         }
@@ -172,28 +171,30 @@ function moveCounter(){
 
 /*--- Game Timer ---*/
 
-var second = 0, minute = 0; hour = 0;
+var second = 0,
+    minute = 0;
+hour = 0;
 var timer = document.querySelector(".timer");
 var interval;
-function startTimer(){
-    interval = setInterval(function(){
-        timer.innerHTML = minute+"mins "+second+"secs";
+function startTimer() {
+    interval = setInterval(function () {
+        timer.innerHTML = minute + "mins " + second + "secs";
         second++;
-        if(second == 60){
+        if (second == 60) {
             minute++;
-            second=0;
+            second = 0;
         }
-        if(minute == 60){
+        if (minute == 60) {
             hour++;
             minute = 0;
         }
-    },1000);
+    }, 1000);
 }
 
 /*--- Game finished modal pop-up ---*/
 
-function congratulations(){
-    if (matchedCard.length == 16){
+function congratulations() {
+    if (matchedCard.length == 16) {
         clearInterval(interval);
         finalTime = timer.innerHTML;
         modal.classList.add("show");
@@ -204,28 +205,26 @@ function congratulations(){
         document.getElementById("starRating").innerHTML = starRating;
         document.getElementById("totalTime").innerHTML = finalTime;
         closeModal();
-    };
+    }
 }
 
-function closeModal(){
-    closeicon.addEventListener("click", function(){
+function closeModal() {
+    closeicon.addEventListener("click", function () {
         modal.classList.remove("show");
         runGame();
     });
 }
 
-
-
-function playAgain(){
+function playAgain() {
     modal.classList.remove("show");
     runGame();
 }
 
 /*--- For loop adding Event Listener ---*/
 
-for (var i = 0; i < cards.length; i++){
+for (var i = 0; i < cards.length; i++) {
     card = cards[i];
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
-    card.addEventListener("click",congratulations);
-};
+    card.addEventListener("click", congratulations);
+}

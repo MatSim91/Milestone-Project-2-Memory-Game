@@ -433,7 +433,7 @@ h1 {
 
 /*--- Media Queries for Smaller Screens ---*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .deck .card.show {
         font-size: 60px;
     }
