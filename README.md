@@ -155,6 +155,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
     - [JavaScript Validator](https://jshint.com) - Used for checking for JavaScript errors.
 
+    - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) - Was used to check overall page performance
+        - ![Google Lighthouse Results](project/Google-lighthouse.jpg)
+
 ## Testing User Stories
 
 -   ### First Time Visitor Goals
