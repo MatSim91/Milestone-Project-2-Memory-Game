@@ -179,17 +179,17 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - 3.1 Fix: Added semicolons to the missing lines and fixed the typos.
 
 4. While trying to run the game it was not running properly.
-    4.1 Fix: While checking why I the game source on the gamt.html page was incorrect. After I updated it fixed the problem.
+    - 4.1 Fix: While checking why I the game source on the gamt.html page was incorrect. After I updated it fixed the problem.
 
 5. The restart button was not working.
-    5.1: Fixed typo with the onclick that was calling the runGame function.
+    - 5.1: Fixed typo with the onclick that was calling the runGame function.
 # Deployment
 
 - GitHub Pages: Under the repository page: 
-        - Click on Settings 
-        - Scroll down to the "GitHub Pages" section 
-        - Select the Source Branch 
-        - Click Save.
+    - Click on Settings 
+    - Scroll down to the "GitHub Pages" section 
+    - Select the Source Branch 
+    - Click Save.
 
 - For this project, I have used the cloud-based IDE [Gitpod](https://gitpod.io/) and [GitHub](http://github.com/) as a free git repository hosting.
 
@@ -223,7 +223,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The Memory game itself was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
-- The Card flip Animation was based on Tutorials Point: - The Memory game itself was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
+- The Card flip Animation was based on Tutorials Point: 
+
+- The Memory game itself was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
 - [Code Institute Course](https://codeinstitute.net/) for the great idea of developing a memory game.
 
@@ -239,15 +241,15 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Code
 
-- [](https://) -
+- [Bootstrap4](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap Library used throughout the project to make it easier using the grid system and pre-maded classes.
 
-- [](https://) - 
+- [Modal pop-up](https://www.youtube.com/watch?v=XH5OW46yO8I) was created with the help of the tutorial.
 
-- [](https://) - 
+- The Memory game was created with the help of on Sandra Israel JavaScript tutorial [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
-- [](https://) - 
+- [Vertical Alignment](https://stackoverflow.com/questions/47334164/how-to-middle-align-the-content-of-the-div-with-height-100vh/47334256) this Stack Overflow post helped with the vertical alignment.
 
-- [](https:///) - 
+- [Card flip animation](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating) was created with the the Tutorial Point code.
 
 - [](https://) - 
 
