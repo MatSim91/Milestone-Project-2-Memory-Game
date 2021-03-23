@@ -1,6 +1,6 @@
 <h1 align="center">Milestone Project 2 - Color's Memory Game</h1>
 
-![Icon's Mockup](project/o-mockup.JPG)
+![Icon's Mockup](project/Responsive-design.JPG)
 
 [Click here to view the live project :link:](https://matsim91.github.io/Milestone-Project-2-Memory-Game/)
 
@@ -55,7 +55,7 @@ This game was created with the main intent to develop quick thinking skills, imp
 
         - The font choose for the H1 headers was the Sora font.
 
-        - All fonts were imported from [Google Fonts](https://fonts.google.com/).
+        - The font was imported from [Google Fonts](https://fonts.google.com/)
 
 
 *   ## Wireframes
@@ -69,19 +69,17 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 # Features
 
-- Interactive Modal pop-up with instructions and play game options. 
+- Interactive Modal pop-up - With instructions and play game options. 
 
-- Memory game counter moves - It counts the moves everytime the user flips two cards, it adds one move to the counter. If the user can finish the game with lesser moves the better
+- Memory game counter moves - It counts the moves everytime the user flips two cards, it adds one move to the counter. If the user can finish the game with lesser moves the better.
 
 - Memory game timer - The timer starts as soon as the user interacts and opens the first two cards.
 
-- Interactive Modal pop-up when game is fisished with "Play again" button
+- Interactive Modal pop-up - When game is fisished with "Play again" button.
 
-- Stars score rating feature based on the number of moves that were performed by player. If moves are less than eight the player gets three stars. If moves are beetween nine and thirteen player gets two stars. Anything above forteen moves player gets one star.
+- Stars score rating - Based on the number of moves that were performed by player. If moves are less than eight the player gets three stars. If moves are beetween nine and thirteen player gets two stars. Anything above forteen moves player gets one star.
 
-- [](https://) - 
-
-- [](https://) - 
+- Restart button - Players can restart the game and the game stats at any time by clicking on the restart icon. 
 
 # Technologies Used
 
@@ -128,7 +126,8 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 7. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Used for testing and fixing website bugs.
 
-8. 
+8. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on the game.html page to add the stars icon, the square icon and the restart icon.
     
 9.
     -
@@ -182,7 +181,11 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 4. While trying to run the game it was not running properly.
     4.1 Fix: While checking why I the game source on the gamt.html page was incorrect. After I updated it fixed the problem.
 
+5. The restart button was not working.
+    5.1: Fixed typo with the onclick that was calling the runGame function.
 # Deployment
+
+- GitHub Pages: Under the repository page: Click on Settings - Scroll down to the "GitHub Pages" section - Select the Source Branch - Click Save.
 
 - For this project, I have used the cloud-based IDE [Gitpod](https://gitpod.io/) and [GitHub](http://github.com/) as a free git repository hosting.
 
