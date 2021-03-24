@@ -47,7 +47,7 @@ This game was created with the main intent to develop quick thinking skills, imp
     -   ### Colour Scheme
 	- I wanted to give a high color contrast to the project. So I have chosen to use all the three primary colors (red, yellow, and blue) all the three secondary colors (orange, green, and violet) and also white and black.
 
-        - The main colors used are Red (#FF0000), Yellow (#FFFF00), Blue (#0000FF), Orange (#FFA500), Green (#00FF00), Violet (#EE82EE), Black (#000000), White (#FFFFFF), and Grey (#EAEAEA).
+        - The main colors used are Red (#FF0000), Yellow (#FFFF00), Blue (#0000FF), Orange (#FFA500), Green (#00FF00), Violet (#EE82EE), Black (#000000), White (#FFFFFF), and Gray (#EAEAEA).
 
         ![Color Palette](project/Color-palette.JPG)
 
@@ -75,7 +75,7 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Memory game timer - The timer starts as soon as the user interacts and opens the first two cards.
 
-- Interactive Modal pop-up - When game is fisished with "Play again" button.
+- Interactive Modal pop-up - When game is finished the pop up appears with the game stats and with the "Play again" button.
 
 - Stars score rating - Based on the number of moves that were performed by player. If moves are less than eight the player gets three stars. If moves are beetween nine and thirteen player gets two stars. Anything above forteen moves player gets one star.
 
@@ -189,10 +189,10 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 # Deployment
 
 - GitHub Pages: Under the repository page: 
-    - Click on Settings 
-    - Scroll down to the "GitHub Pages" section 
-    - Select the Source Branch 
-    - Click Save.
+    1. Click on Settings 
+    2. Scroll down to the "GitHub Pages" section 
+    3. Select the Source Branch 
+    4. Click Save.
 
 - For this project, I have used the cloud-based IDE [Gitpod](https://gitpod.io/) and [GitHub](http://github.com/) as a free git repository hosting.
 
@@ -228,17 +228,15 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The Card flip Animation was based on Tutorials Point: 
 
-- The Memory game itself was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
-
 - [Code Institute Course](https://codeinstitute.net/) for the great idea of developing a memory game.
 
 - [Bootstrap](https://getbootstrap.com) for the large and free libraries.
 
 - [Font Awesome](https://fontawesome.com/icons) for the huge collection of free icons they offer.
 
-- [Web Formatter](https://webformatter.com/) - Used for formatting HTML, CSS and Javascript and also to check for errors.
+- [Web Formatter](https://webformatter.com/) Used for formatting HTML, CSS and Javascript and also to check for errors.
 
-- 
+- [Google Fonts:](https://fonts.google.com/) Thanks to Google for providing this huge amount of free fonts on the site.
 
 -  
 
@@ -252,9 +250,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - [Vertical Alignment](https://stackoverflow.com/questions/47334164/how-to-middle-align-the-content-of-the-div-with-height-100vh/47334256) this Stack Overflow post helped with the vertical alignment.
 
-- [Card flip animation](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating) was created with the the Tutorial Point code.
-
-- [](https://) - 
+- [Card flip animation](https://www.tutorialspoint.com/css/css_animation_flip.htm) was created with the the Tutorial Point code.
 
 ## Content
 
