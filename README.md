@@ -106,7 +106,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Frameworks Libraries and Programs Used
 
-1. [Bootstrap 4.5.3:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+1. [Bootstrap:](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 
 2. [JavaScript Validator](https://jshint.com)
@@ -125,16 +125,10 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - Balsamiq was used to create the [Wireframes](#wireframes) during the design process.
 
 7. [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
-    - Used for testing and fixing website bugs.
+    - Used for testing and fixing website bugs. Also used Google Lighthouse for performance testing.
 
 8. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on the game.html page to add the stars icon, the square icon and the restart icon.
-    
-9.
-    -
-
-10. 
-    - 
 
 # Testing
 
@@ -189,17 +183,17 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     2. Tested the restart feature when the game has not started (when no card was clicked) just to make sure it would not change the page appeareance. Also tested the restart feature when just one card is flipped and when two cards are flipped and matched.
 
     3. Tested the clock to make sure it would only start when the second card is clicked and make sure the clock would reset when the restart icon is clicked. Also tested if the correct time is displayed in the Modal pop-up when the player finished the game:
-        - "in Xmins Xsecs"
+        - "in **X**mins **X**secs"
 
     4. Tested the moves counter feature to make sure it is counting properly when every two cards are selected. Also the moves counter must reset after we hit the restart icon. Tested that the seconds and minutes were displaying and counting properly. Checked the Modal pop-up when the game finished to make sure the correct amount of moves is appearing there:
-        - "You have made X moves"
+        - "You have made **X** moves"
 
     5. Tested the stars feature to make sure it was giving the correct amount of stars based on the correct amount of moves:
         - If moves are less than 8 player gets 3 stars.
         - If moves are less then 13 player gets 2 stars.
         - Anything above 14 moves player gets 1 star.
     Also checked if the starts were showing properly in the Modal pop-up that appears when the game finishes:
-        - "Your Rating is: X"
+        - "Your Rating is: **X**"
 
     6. Tested the Modal pop-up that appears when the game finishes and all the cards colors had a match. The pop-up should appear showing the correct ending game stats and offering the option to the player to play the game again or to close the pop-up.
 
@@ -207,22 +201,22 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 ## Bugs and Fixes
 
 1. While creating the Modal pop-up in the index.html page the modal was not appearing on the browser. 
-	- 1.1 Fix: After closer look it was because bootstrap was interfering with the classes modal-container, modal_container and modal. I have updated these classes name and it fixed the bug.
+	- 1.1 **Fix:** After closer look it was because bootstrap was interfering with the classes modal-container, modal_container and modal. I have updated these classes name and it fixed the bug.
 
 2. While trying to load the Font Awesome Icon there was an error and the Icon was not appearing. I was using a CDN as a source to load the Icon.
-    - 2.1 Fix: I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
+    - 2.1 **Fix:** I was able to fix this by creating an account with Font Awesome and adding the script source references that they have reccomended.
 
 3. While running the JavaScript code through a validator it showed that a few semicolons were missing and a few typos.
-    - 3.1 Fix: Added semicolons to the missing lines and fixed the typos.
+    - 3.1 **Fix:** Added semicolons to the missing lines and fixed the typos.
 
 4. While trying to run the game it was not running properly.
-    - 4.1 Fix: While checking why I the game source on the gamt.html page was incorrect. After I updated it fixed the problem.
+    - 4.1 **Fix:** While checking why I the game source on the game.html page was incorrect. After I updated it fixed the problem.
 
 5. The restart button was not working.
-    - 5.1: Fixed typo with the onclick that was calling the runGame function.
+    - 5.1: **Fix:** typo with the onclick that was calling the runGame function.
 # Deployment
 
-- GitHub Pages: Under the repository page: 
+- **GitHub Pages:** Under the repository page: 
     1. Click on Settings 
     2. Scroll down to the "GitHub Pages" section 
     3. Select the Source Branch 
