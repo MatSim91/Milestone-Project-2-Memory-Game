@@ -18,6 +18,7 @@ Color's Memory Game was created for kids from age 3-6 years but even adults can 
 5.  [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
 6.  [Testing](#testing)
     - [Testing User Stories](#testing-user-stories)
+    - [Additional Testing](#additional-testing)
     - [Bugs and Fixes](#bugs-and-fixes)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
@@ -137,7 +138,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 # Testing
 
-- All the links and  were tested thoroughly.
+- All the links, modal pop-ups and features  were tested thoroughly.
 
 - The website was tested in Google Chrome, Microsoft Edge, Mozilla Firefox, both on Windows and Mac OS.
 
@@ -147,9 +148,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project:
 
-    -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmatsim91.github.io%2FMilestone-Project-1-One-Porcent%2F) - I have validated using Direct Input from each HTML page and by URL.
+    -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - I have validated using Direct Input from each HTML page and by URL.
 
-    -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatsim91.github.io%2FMilestone-Project-1-One-Porcent%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - I have validated CSS using Direct Input and by URL. OBS: There is 10 warning due to some -webkits added on CSS, they were imported from external libraries and are needed to add interactivity.
+    -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - I have validated CSS using Direct Input and by URL. No errors appeared on the output.
 
     - [Web Formatter](https://webformatter.com/) - Was also used for checking for any errors in HTML and CSS.
 
@@ -169,6 +170,39 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     1. As a return user that keeps playing a lot I can keep resetting my score stats to try to get better scores.
     2. As a return user I can keep checking the game timer on the game stats bar to try and finish the game with a better time.
     3. As a return user I can keep checking my moves and time to give me a clear view how my score is compared with my previous stats, I can also use the 3 stars rating as an easier way to compare my previous score.
+
+## Additional Testing
+
+-   ### Testing page index.html:
+    1. Checking the index.html page I have tested the Modal pop-up interactivity by opening and closing several times on different browsers and different screen resolutions.
+    
+    2. When clicking on the "Instructions" button it should open a Modal pop-up with the instructions and two other buttons. 
+        2.1 Inside the Instructions Pop-up I have checked also the "Close" and "Play game" buttons to make sure they were working properly. 
+    
+    3. Tested "Play game" button to make sure it is redirecting to the game.html page.
+
+-   ### Testing page game.html:
+    1. Checked if the cards when clicked would flip over and stay open until you select a second card.
+        1.1 Tested the unmatch option when the second selected card is from a different color the cards should flip back to the original state.
+        1.2 Tested the match option when the second selected card is from the same color then the cards should stay opened until the game ends.
+
+    2. Tested the restart feature when the game has not started (when no card was clicked) just to make sure it would not change the page appeareance. Also tested the restart feature when just one card is flipped and when two cards are flipped and matched.
+
+    3. Tested the clock to make sure it would only start when the second card is clicked and make sure the clock would reset when the restart icon is clicked. Also tested if the correct time is displayed in the Modal pop-up when the player finished the game:
+        - "in Xmins Xsecs"
+
+    4. Tested the moves counter feature to make sure it is counting properly when every two cards are selected. Also the moves counter must reset after we hit the restart icon. Tested that the seconds and minutes were displaying and counting properly. Checked the Modal pop-up when the game finished to make sure the correct amount of moves is appearing there:
+        - "You have made X moves"
+
+    5. Tested the stars feature to make sure it was giving the correct amount of stars based on the correct amount of moves:
+        - If moves are less than 8 player gets 3 stars.
+        - If moves are less then 13 player gets 2 stars.
+        - Anything above 14 moves player gets 1 star.
+    Also checked if the starts were showing properly in the Modal pop-up that appears when the game finishes:
+        - "Your Rating is: X"
+
+    6. Tested the Modal pop-up that appears when the game finishes and all the cards colors had a match. The pop-up should appear showing the correct ending game stats and offering the option to the player to play the game again or to close the pop-up.
+
 
 ## Bugs and Fixes
 
@@ -224,7 +258,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The Modal pop-up was created with the help from Florin Pop: [Link Here](https://www.youtube.com/watch?v=XH5OW46yO8I)
 
-- The Memory game itself was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
+- The Memory game was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
 - The Card flip Animation was based on Tutorials Point: 
 
@@ -238,15 +272,13 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - [Google Fonts:](https://fonts.google.com/) Thanks to Google for providing this huge amount of free fonts on the site.
 
--  
-
 ## Code
 
 - [Bootstrap4](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap Library used throughout the project to make it easier using the grid system and pre-maded classes.
 
 - [Modal pop-up](https://www.youtube.com/watch?v=XH5OW46yO8I) was created with the help of the tutorial.
 
-- The Memory game was created with the help of on Sandra Israel JavaScript tutorial [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
+- The [JavaScript Memory Game](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating) was created with the help of on Sandra Israel JavaScript tutorial.
 
 - [Vertical Alignment](https://stackoverflow.com/questions/47334164/how-to-middle-align-the-content-of-the-div-with-height-100vh/47334256) this Stack Overflow post helped with the vertical alignment.
 
