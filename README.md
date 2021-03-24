@@ -29,7 +29,7 @@ Color's Memory Game was created for kids from age 3-6 years but even adults can 
 
 # User Experience
 
-This game was created with the main intent to develop quick thinking skills, improve concentration, focus and develop the memory! The brain is a powerful machine that always needs fuel and action. Keep that brain active by playing memory games!
+This game was created with the main intent to develop quick thinking skills, improve concentration, focus and develop the memory! The brain is a powerful machine that always needs fuel and action. Keep the brain active by playing memory games!
 
 -   ## User stories
 
@@ -63,22 +63,25 @@ This game was created with the main intent to develop quick thinking skills, imp
 
     - The wireframe was developed using [balsamiq](https://balsamiq.com/).
 
-    - Landing Page wireframe (index.html) Wireframe - [View](https://github.com/MatSim91/Milestone-Project-2-Memory-Game/blob/master/project/Landing-page-wireframe.JPG)
+    - The wireframe was created thinking about making the game layout simple and clean and also when the player is viewing the screen to not have the screen with too many unnecessary buttons and actions.
 
-    - Game page Wireframe (game.html) - [View](https://github.com/MatSim91/Milestone-Project-2-Memory-Game/blob/master/project/Memory-game-wireframe.JPG)
+    - Landing Page wireframe (index.html) Wireframe - [View](https://github.com/MatSim91/Milestone-Project-2-Memory-Game/blob/master/project/Landing-page-wireframe.JPG) - The landing page wireframe changed a bit as a suggestion from my mentor Akshat. The Play Game button got bigger to give more focus to the main feature and also I have moved to stay on top of the Instructions button.
 
+    - Game page Wireframe (game.html) - [View](https://github.com/MatSim91/Milestone-Project-2-Memory-Game/blob/master/project/Memory-game-wireframe.JPG) - There was not much change from the start of the project wireframe on the game.html page. The focus here was basically keep the screen clean from unnecessary text, buttons and features so the player can focus on the game and on the important game stats.
+
+    - Possible future update to the project: Add a Theme feature with two buttons where the player can choose weather to use the "Dark Theme" or the "Light Theme".
 
 # Features
 
-- Interactive Modal pop-up - With instructions and play game options. 
+- Interactive Modal pop-up on index.html page - With instructions and play game options. 
 
 - Memory game counter moves - It counts the moves everytime the user flips two cards, it adds one move to the counter. If the user can finish the game with lesser moves the better.
 
 - Memory game timer - The timer starts as soon as the user interacts and opens the first two cards.
 
-- Interactive Modal pop-up - When game is finished the pop up appears with the game stats and with the "Play again" button.
+- Interactive Modal pop-up on game.html page - When game is finished the pop up appears with the game stats and with the "Play again" button.
 
-- Stars score rating - Based on the number of moves that were performed by player. If moves are less than eight the player gets three stars. If moves are beetween nine and thirteen player gets two stars. Anything above forteen moves player gets one star.
+- Stars score rating - Based on the number of moves that were performed by player. If moves are less than eight the player gets three stars. If moves are between nine and thirteen player gets two stars. Anything above forteen moves player gets one star.
 
 - Restart button - Players can restart the game and the game stats at any time by clicking on the restart icon. 
 
@@ -190,7 +193,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
     5. Tested the stars feature to make sure it was giving the correct amount of stars based on the correct amount of moves:
         - If moves are less than 8 player gets 3 stars.
-        - If moves are less then 13 player gets 2 stars.
+        - If moves are higher than 8 AND less then 13 player gets 2 stars.
         - Anything above 14 moves player gets 1 star.
     Also checked if the starts were showing properly in the Modal pop-up that appears when the game finishes:
         - "Your Rating is: **X**"
@@ -213,7 +216,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - 4.1 **Fix:** While checking why I the game source on the game.html page was incorrect. After I updated it fixed the problem.
 
 5. The restart button was not working.
-    - 5.1: **Fix:** typo with the onclick that was calling the runGame function.
+    - 5.1: **Fix:** Typo with the onclick that was calling the runGame function.
 # Deployment
 
 - **GitHub Pages:** Under the repository page: 
