@@ -217,6 +217,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 5. The restart button was not working.
     - 5.1: **Fix:** Typo with the onclick that was calling the runGame function.
+
+6. The project was not passing through the HTML validator and it was returning the error:  "The type attribute on the li element is obsolete".
+    - 6.1 **Fix:** I have updated the list from an ul (unordered list) to an ol (ordered list) and have inserted unique values to each card color (values from 1 to 8) I have also updated the JavaScript code to check if the values match. 
 # Deployment
 
 - **GitHub Pages:** Under the repository page: 
