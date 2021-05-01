@@ -94,7 +94,7 @@ function cardOpen() {
     var len = openedCards.length;
     if (len === 2) {
         moveCounter();
-        if (openedCards[0].type === openedCards[1].type) {
+        if (openedCards[0].value === openedCards[1].value) {
             matched();
         } else {
             unmatched();
