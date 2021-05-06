@@ -7,10 +7,10 @@ const deck = document.getElementById("card-deck");
 
 let moves = 0;
 let counter = document.querySelector(".moves");
-const stars = document.querySelectorAll(".fa-star");
+const trophies = document.querySelectorAll(".fa-trophy");
 
 let matchedCard = document.getElementsByClassName("match");
-let starsList = document.querySelectorAll(".stars li");
+let trophiesList = document.querySelectorAll(".trophies li");
 
 let closeicon = document.querySelector(".close");
 let modal = document.getElementById("popup1");
@@ -43,10 +43,10 @@ function initialiseGameBoard() {
     }
 }
 
-function initStars() {
-    for (var i = 0; i < stars.length; i++) {
-        stars[i].style.color = "#FFD700";
-        stars[i].style.visibility = "visible";
+function startTrophies() {
+    for (var i = 0; i < trophies.length; i++) {
+        trophies[i].style.color = "#FFD700";
+        trophies[i].style.visibility = "visible";
     }
 }
 
@@ -67,19 +67,19 @@ function initTimer() {
 function startMemory() {
     initialiseGameBoard();
     initScore();
-    initStars();
+    startTrophies();
     initTimer();
 }
 
 /*--- Toggle classes to open and show the cards ---*/
-var displayCard = function() {
+var showColor = function() {
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
 
 /*--- Function to check if opened cards match or unmatch ---*/
-function cardOpen() {
+function colorMatch() {
     openedCards.push(this);
     var len = openedCards.length;
     if (len === 2) {
@@ -133,19 +133,19 @@ function updateRatings() {
     if (moves > 8 && moves < 12) {
         for (i = 0; i < 3; i++) {
             if (i > 1) {
-                stars[i].style.visibility = "collapse";
+                trophies[i].style.visibility = "collapse";
             }
         }
     } else if (moves > 13) {
         for (i = 0; i < 3; i++) {
             if (i > 0) {
-                stars[i].style.visibility = "collapse";
+                trophies[i].style.visibility = "collapse";
             }
         }
     }
 }
 
-/*--- Move counter display, start timer and 3 stars rating ---*/
+/*--- Move counter display, start timer and 3 trophies rating ---*/
 function moveCounter() {
     moves++;
     counter.innerHTML = moves;
@@ -181,12 +181,12 @@ function startTimer() {
 }
 
 /*--- Game finished modal pop-up ---*/
-function congratulations() {
+function gameFinish() {
     if (matchedCard.length == 16) {
         clearInterval(interval);
         finalTime = timer.innerHTML;
         modal.classList.add("show");
-        var starRating = document.querySelector(".stars").innerHTML;
+        var trophyRating = document.querySelector(".trophies").innerHTML;
         document.getElementById("finalMove").innerHTML = moves;
         document.getElementById("starRating").innerHTML = starRating;
         document.getElementById("totalTime").innerHTML = finalTime;
@@ -211,8 +211,8 @@ document.body.onload = (function() {
     startMemory();
     for (var i = 0; i < cards.length; i++) {
         card = cards[i];
-        card.addEventListener("click", displayCard);
-        card.addEventListener("click", cardOpen);
-        card.addEventListener("click", congratulations);
+        card.addEventListener("click", showColor);
+        card.addEventListener("click", colorMatch);
+        card.addEventListener("click", gameFinish);
     }
 })();
