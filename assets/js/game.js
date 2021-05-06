@@ -5,8 +5,8 @@ let cards = [...cardList];
 
 const deck = document.getElementById("card-deck");
 
-let moves = 0;
-let counter = document.querySelector(".moves");
+let actions = 0;
+let counter = document.querySelector(".actions");
 const trophies = document.querySelectorAll(".fa-trophy");
 
 let matchedCard = document.getElementsByClassName("match");
@@ -32,7 +32,7 @@ function randomize(array) {
     return array;
 }
 
-/*--- Initialises the game board and shows all the cards reset timer and moves ---*/
+/*--- Initialises the game board and shows all the cards reset timer and actions ---*/
 function initialiseGameBoard() {
     openedCards = [];
     cards = randomize(cards);
@@ -51,8 +51,8 @@ function startTrophies() {
 }
 
 function initScore() {
-    moves = 0;
-    counter.innerHTML = moves;
+    actions = 0;
+    counter.innerHTML = actions;
 }
 
 function initTimer() {
@@ -130,13 +130,13 @@ function enable() {
 }
 
 function updateRatings() {
-    if (moves > 8 && moves < 12) {
+    if (actions > 8 && actions < 12) {
         for (i = 0; i < 3; i++) {
             if (i > 1) {
                 trophies[i].style.visibility = "collapse";
             }
         }
-    } else if (moves > 13) {
+    } else if (actions > 13) {
         for (i = 0; i < 3; i++) {
             if (i > 0) {
                 trophies[i].style.visibility = "collapse";
@@ -147,9 +147,9 @@ function updateRatings() {
 
 /*--- Move counter display, start timer and 3 trophies rating ---*/
 function moveCounter() {
-    moves++;
-    counter.innerHTML = moves;
-    if (moves == 1) {
+    actions++;
+    counter.innerHTML = actions;
+    if (actions == 1) {
         second = 0;
         minute = 0;
         hour = 0;
@@ -187,8 +187,8 @@ function gameFinish() {
         finalTime = timer.innerHTML;
         modal.classList.add("show");
         var trophyRating = document.querySelector(".trophies").innerHTML;
-        document.getElementById("finalMove").innerHTML = moves;
-        document.getElementById("starRating").innerHTML = starRating;
+        document.getElementById("finalMove").innerHTML = actions;
+        document.getElementById("trophyRating").innerHTML = trophyRating;
         document.getElementById("totalTime").innerHTML = finalTime;
         closeModal();
     }

@@ -75,13 +75,13 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Interactive Modal pop-up on index.html page - With instructions and play game options. 
 
-- Memory game counter moves - It counts the moves everytime the user flips two cards, it adds one move to the counter. If the user can finish the game with lesser moves the better.
+- Memory game counter actions - It counts the actions everytime the user flips two cards, it adds one move to the counter. If the user can finish the game with lesser actions the better.
 
 - Memory game timer - The timer starts as soon as the user interacts and opens the first two cards.
 
 - Interactive Modal pop-up on game.html page - When game is finished the pop up appears with the game stats and with the "Play again" button.
 
-- Stars score rating - Based on the number of moves that were performed by player. If moves are less than eight the player gets three stars. If moves are between nine and thirteen player gets two stars. Anything above forteen moves player gets one star.
+- Trophies score rating - Based on the number of actions that were performed by player. If actions are less than eight the player gets three trophies. If actions are between nine and thirteen player gets two trophies. Anything above forteen actions player gets one star.
 
 - Restart button - Players can restart the game and the game stats at any time by clicking on the restart icon. 
 
@@ -131,7 +131,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - Used for testing and fixing website bugs. Also used Google Lighthouse for performance testing.
 
 8. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on the game.html page to add the stars icon, the square icon and the restart icon.
+    - Font Awesome was used on the game.html page to add the trophies icon, the square icon and the restart icon.
 
 # Testing
 
@@ -166,7 +166,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 -   ### Returning and Frequent Visitor Goals
     1. As a return user that keeps playing a lot I can keep resetting my score stats to try to get better scores.
     2. As a return user I can keep checking the game timer on the game stats bar to try and finish the game with a better time.
-    3. As a return user I can keep checking my moves and time to give me a clear view how my score is compared with my previous stats, I can also use the 3 stars rating as an easier way to compare my previous score.
+    3. As a return user I can keep checking my actions and time to give me a clear view how my score is compared with my previous stats, I can also use the 3 trophies rating as an easier way to compare my previous score.
 
 ## Additional Testing
 
@@ -188,13 +188,13 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     3. Tested the clock to make sure it would only start when the second card is clicked and make sure the clock would reset when the restart icon is clicked. Also tested if the correct time is displayed in the Modal pop-up when the player finished the game:
         - "in **X**mins **X**secs"
 
-    4. Tested the moves counter feature to make sure it is counting properly when every two cards are selected. Also the moves counter must reset after we hit the restart icon. Tested that the seconds and minutes were displaying and counting properly. Checked the Modal pop-up when the game finished to make sure the correct amount of moves is appearing there:
-        - "You have made **X** moves"
+    4. Tested the actions counter feature to make sure it is counting properly when every two cards are selected. Also the actions counter must reset after we hit the restart icon. Tested that the seconds and minutes were displaying and counting properly. Checked the Modal pop-up when the game finished to make sure the correct amount of actions is appearing there:
+        - "You have made **X** actions"
 
-    5. Tested the stars feature to make sure it was giving the correct amount of stars based on the correct amount of moves:
-        - If moves are less than 8 player gets 3 stars.
-        - If moves are higher than 8 AND less then 13 player gets 2 stars.
-        - Anything above 14 moves player gets 1 star.
+    5. Tested the trophies feature to make sure it was giving the correct amount of trophies based on the correct amount of actions:
+        - If actions are less than 8 player gets 3 trophies.
+        - If actions are higher than 8 AND less then 13 player gets 2 trophies.
+        - Anything above 14 actions player gets 1 trophie.
     Also checked if the starts were showing properly in the Modal pop-up that appears when the game finishes:
         - "Your Rating is: **X**"
 
