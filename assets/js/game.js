@@ -64,7 +64,7 @@ function initTimer() {
     clearInterval(interval);
 }
 
-function runGame() {
+function startMemory() {
     initialiseGameBoard();
     initScore();
     initStars();
@@ -197,18 +197,18 @@ function congratulations() {
 function closeModal() {
     closeicon.addEventListener("click", function() {
         modal.classList.remove("show");
-        runGame();
+        startMemory();
     });
 }
 
-function playAgain() {
+function runMemoryGame() {
     modal.classList.remove("show");
-    runGame();
+    startMemory();
 }
 
 /*--- For loop adding Event Listener ---*/
 document.body.onload = (function() {
-    runGame();
+    startMemory();
     for (var i = 0; i < cards.length; i++) {
         card = cards[i];
         card.addEventListener("click", displayCard);
