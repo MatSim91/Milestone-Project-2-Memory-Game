@@ -1,4 +1,4 @@
-/*--- Declared Variables ---*/
+/*--- Declared Variables ----*/ 
 
 let cardList = document.getElementsByClassName("card");
 let cards = [...cardList];
