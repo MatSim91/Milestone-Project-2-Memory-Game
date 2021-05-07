@@ -128,7 +128,7 @@ h1 {
     pointer-events: none;
 }
 
-.modal-container-instructions.show {
+.modal-container-instructions.display {
     opacity: 1;
     pointer-events: auto;
 }
@@ -184,7 +184,7 @@ h1 {
 
 /*--- Game Page ---*/
 
-.deck {
+.board {
     background: #000000;
     padding: 1rem;
     display: flex;
@@ -194,7 +194,7 @@ h1 {
     margin: 0 0 3em;
 }
 
-.deck .card {
+.board .icon {
     height: 3.7rem;
     width: 3.7rem;
     margin: 0.2rem 0.2rem;
@@ -208,19 +208,19 @@ h1 {
     align-items: center;
 }
 
-.deck .card.equal {
+.board .icon.equal {
     cursor: default;
     font-size: 130px;
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
 }
 
-.deck .card.unmatched {
+.board .icon.unmatched {
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
 }
 
-.deck .card.open {
+.board .icon.flip {
     transform: rotateY(0);
     cursor: default;
     animation-name: flipInY;
@@ -229,11 +229,11 @@ h1 {
     animation-duration: 0.8s;
 }
 
-.deck .card.disabled {
+.board .icon.off {
     pointer-events: none;
 }
 
-.deck .card.show {
+.board .icon.display {
     font-size: 130px;
 }
 
@@ -336,7 +336,7 @@ h1 {
     display: inline-block;
 }
 
-.show {
+.display {
     visibility: visible !important;
     opacity: 100 !important;
 }
@@ -390,7 +390,7 @@ h1 {
     color: #FF0000;
 }
 
-/*--- Card Flip Animation ---*/
+/*--- icon Flip Animation ---*/
 
 @keyframes flipInY {
     0% {
@@ -416,12 +416,12 @@ h1 {
         font-size: 22px;
     }
 
-    .deck {
+    .board {
         width: 660px;
         height: 680px;
     }
 
-    .deck .card {
+    .board .icon {
         height: 125px;
         width: 125px;
     }
@@ -434,14 +434,14 @@ h1 {
 /*--- Media Queries for Smaller Screens ---*/
 
 @media (max-width: 767px) {
-    .deck .card.show {
+    .board .icon.display {
         font-size: 60px;
     }
 
-    .deck .card.equal {
+    .board .icon.equal {
         font-size: 60px;
     }
-    .deck .card {
+    .board .icon {
         border-radius: 10px;
     }
 }
@@ -456,11 +456,11 @@ h1 {
 }
 
 @media (max-width: 320px) {
-    .deck {
+    .board {
         width: 85%;
     }
 
-    .deck .card {
+    .board .icon {
         height: 4.7rem;
         width: 4.7rem;
     }

@@ -1,22 +1,22 @@
 /*--- Declared Variables ----*/ 
 
-let cardList = document.getElementsByClassName("card");
-let cards = [...cardList];
+let iconList = document.getElementsByClassName("icon");
+let icons = [...iconList];
 
-const deck = document.getElementById("card-deck");
+const board = document.getElementById("icons-board");
 
 let actions = 0;
 let counter = document.querySelector(".actions");
 const trophies = document.querySelectorAll(".fa-trophy");
 
-let colorMatched = document.getElementsByClassName("equal");
+let sameColor = document.getElementsByClassName("equal");
 let trophiesList = document.querySelectorAll(".trophies li");
 
 let closeModalPopup = document.querySelector(".close-button-2");
 let gamePopup = document.getElementById("game-popup");
 var flippedColors = [];
 
-/*--- Randomize the cards ---*/
+/*--- Randomize the icons ---*/
 
 function randomize(array) {
     var currentIndex = array.length,
@@ -32,14 +32,14 @@ function randomize(array) {
     return array;
 }
 
-/*--- Initialises the game board and shows all the cards reset timer and actions ---*/
+/*--- Initialises the game board and displays all the icons reset timer and actions ---*/
 function initialiseGameBoard() {
     flippedColors = [];
-    cards = randomize(cards);
-    deck.innerHTML = "";
-    for (var i = 0; i < cards.length; i++) {
-        cards[i].classList.remove("show", "open", "equal", "disabled");
-        deck.appendChild(cards[i]);
+    icons = randomize(icons);
+    board.innerHTML = "";
+    for (var i = 0; i < icons.length; i++) {
+        icons[i].classList.remove("display", "flip", "equal", "off");
+        board.appendChild(icons[i]);
     }
 }
 
@@ -71,60 +71,60 @@ function startMemory() {
     initTimer();
 }
 
-/*--- Toggle classes to open and show the cards ---*/
+/*--- Toggle classes to flip and display the icons ---*/
 var showColor = function() {
-    this.classList.toggle("open");
-    this.classList.toggle("show");
-    this.classList.toggle("disabled");
+    this.classList.toggle("flip");
+    this.classList.toggle("display");
+    this.classList.toggle("off");
 };
 
-/*--- Function to check if opened cards are equal or unmatch ---*/
+/*--- Function to check if flipped icons are the same or different ---*/
 function colorMatch() {
     flippedColors.push(this);
     var len = flippedColors.length;
     if (len === 2) {
         actionsCounter();
         if (flippedColors[0].value === flippedColors[1].value) {
-            matched();
+            same();
         } else {
-            unmatched();
+            different();
         }
     }
 }
 
-/*--- Adding classes when cards match ---*/
-function matched() {
-    flippedColors[0].classList.add("equal", "disabled");
-    flippedColors[1].classList.add("equal", "disabled");
-    flippedColors[0].classList.remove("show", "open", "no-event");
-    flippedColors[1].classList.remove("show", "open", "no-event");
+/*--- Adding classes when icons are the same ---*/
+function same() {
+    flippedColors[0].classList.add("equal", "off");
+    flippedColors[1].classList.add("equal", "off");
+    flippedColors[0].classList.remove("display", "flip", "no-event");
+    flippedColors[1].classList.remove("display", "flip", "no-event");
     flippedColors = [];
 }
 
-/*--- Adding classes when cards don't match ---*/
-function unmatched() {
-    flippedColors[0].classList.add("unmatched");
-    flippedColors[1].classList.add("unmatched");
-    disable();
+/*--- Adding classes when icons are different ---*/
+function different() {
+    flippedColors[0].classList.add("different");
+    flippedColors[1].classList.add("different");
+    deactivate();
     setTimeout(function() {
-        flippedColors[0].classList.remove("show", "open", "no-event", "unmatched");
-        flippedColors[1].classList.remove("show", "open", "no-event", "unmatched");
-        enable();
+        flippedColors[0].classList.remove("display", "flip", "no-event", "different");
+        flippedColors[1].classList.remove("display", "flip", "no-event", "different");
+        activate();
         flippedColors = [];
     }, 1100);
 }
 
-function disable() {
-    Array.prototype.filter.call(cards, function(card) {
-        card.classList.add("disabled");
+function deactivate() {
+    Array.prototype.filter.call(icons, function(icon) {
+        icon.classList.add("off");
     });
 }
 
-function enable() {
-    Array.prototype.filter.call(cards, function(card) {
-        card.classList.remove("disabled");
-        for (var i = 0; i < colorMatched.length; i++) {
-            colorMatched[i].classList.add("disabled");
+function activate() {
+    Array.prototype.filter.call(icons, function(icon) {
+        icon.classList.remove("off");
+        for (var i = 0; i < sameColor.length; i++) {
+            sameColor[i].classList.add("off");
         }
     });
 }
@@ -182,10 +182,10 @@ function startTimer() {
 
 /*--- Game finished modal pop-up ---*/
 function gameFinish() {
-    if (colorMatched.length == 16) {
+    if (sameColor.length == 16) {
         clearInterval(interval);
         finalTime = timer.innerHTML;
-        gamePopup.classList.add("show");
+        gamePopup.classList.add("display");
         var trophyRating = document.querySelector(".trophies").innerHTML;
         document.getElementById("finalMove").innerHTML = actions;
         document.getElementById("trophyRating").innerHTML = trophyRating;
@@ -196,23 +196,23 @@ function gameFinish() {
 
 function closeModal() {
     closeModalPopup.addEventListener("click", function() {
-        gamePopup.classList.remove("show");
+        gamePopup.classList.remove("display");
         startMemory();
     });
 }
 
 function runMemoryGame() {
-    gamePopup.classList.remove("show");
+    gamePopup.classList.remove("display");
     startMemory();
 }
 
 /*--- For loop adding Event Listener ---*/
 document.body.onload = (function() {
     startMemory();
-    for (var i = 0; i < cards.length; i++) {
-        card = cards[i];
-        card.addEventListener("click", showColor);
-        card.addEventListener("click", colorMatch);
-        card.addEventListener("click", gameFinish);
+    for (var i = 0; i < icons.length; i++) {
+        icon = icons[i];
+        icon.addEventListener("click", showColor);
+        icon.addEventListener("click", colorMatch);
+        icon.addEventListener("click", gameFinish);
     }
 })();
