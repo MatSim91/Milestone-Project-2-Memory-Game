@@ -9,12 +9,12 @@ let actions = 0;
 let counter = document.querySelector(".actions");
 const trophies = document.querySelectorAll(".fa-trophy");
 
-let matchedCard = document.getElementsByClassName("match");
+let colorMatched = document.getElementsByClassName("equal");
 let trophiesList = document.querySelectorAll(".trophies li");
 
-let closeicon = document.querySelector(".close");
-let modal = document.getElementById("popup1");
-var openedCards = [];
+let closeModalPopup = document.querySelector(".close-button-2");
+let gamePopup = document.getElementById("game-popup");
+var flippedColors = [];
 
 /*--- Randomize the cards ---*/
 
@@ -34,11 +34,11 @@ function randomize(array) {
 
 /*--- Initialises the game board and shows all the cards reset timer and actions ---*/
 function initialiseGameBoard() {
-    openedCards = [];
+    flippedColors = [];
     cards = randomize(cards);
     deck.innerHTML = "";
     for (var i = 0; i < cards.length; i++) {
-        cards[i].classList.remove("show", "open", "match", "disabled");
+        cards[i].classList.remove("show", "open", "equal", "disabled");
         deck.appendChild(cards[i]);
     }
 }
@@ -78,13 +78,13 @@ var showColor = function() {
     this.classList.toggle("disabled");
 };
 
-/*--- Function to check if opened cards match or unmatch ---*/
+/*--- Function to check if opened cards are equal or unmatch ---*/
 function colorMatch() {
-    openedCards.push(this);
-    var len = openedCards.length;
+    flippedColors.push(this);
+    var len = flippedColors.length;
     if (len === 2) {
-        moveCounter();
-        if (openedCards[0].value === openedCards[1].value) {
+        actionsCounter();
+        if (flippedColors[0].value === flippedColors[1].value) {
             matched();
         } else {
             unmatched();
@@ -94,23 +94,23 @@ function colorMatch() {
 
 /*--- Adding classes when cards match ---*/
 function matched() {
-    openedCards[0].classList.add("match", "disabled");
-    openedCards[1].classList.add("match", "disabled");
-    openedCards[0].classList.remove("show", "open", "no-event");
-    openedCards[1].classList.remove("show", "open", "no-event");
-    openedCards = [];
+    flippedColors[0].classList.add("equal", "disabled");
+    flippedColors[1].classList.add("equal", "disabled");
+    flippedColors[0].classList.remove("show", "open", "no-event");
+    flippedColors[1].classList.remove("show", "open", "no-event");
+    flippedColors = [];
 }
 
 /*--- Adding classes when cards don't match ---*/
 function unmatched() {
-    openedCards[0].classList.add("unmatched");
-    openedCards[1].classList.add("unmatched");
+    flippedColors[0].classList.add("unmatched");
+    flippedColors[1].classList.add("unmatched");
     disable();
     setTimeout(function() {
-        openedCards[0].classList.remove("show", "open", "no-event", "unmatched");
-        openedCards[1].classList.remove("show", "open", "no-event", "unmatched");
+        flippedColors[0].classList.remove("show", "open", "no-event", "unmatched");
+        flippedColors[1].classList.remove("show", "open", "no-event", "unmatched");
         enable();
-        openedCards = [];
+        flippedColors = [];
     }, 1100);
 }
 
@@ -123,20 +123,20 @@ function disable() {
 function enable() {
     Array.prototype.filter.call(cards, function(card) {
         card.classList.remove("disabled");
-        for (var i = 0; i < matchedCard.length; i++) {
-            matchedCard[i].classList.add("disabled");
+        for (var i = 0; i < colorMatched.length; i++) {
+            colorMatched[i].classList.add("disabled");
         }
     });
 }
 
 function updateRatings() {
-    if (actions > 8 && actions < 12) {
+    if (actions > 10 && actions < 14) {
         for (i = 0; i < 3; i++) {
             if (i > 1) {
                 trophies[i].style.visibility = "collapse";
             }
         }
-    } else if (actions > 13) {
+    } else if (actions > 15) {
         for (i = 0; i < 3; i++) {
             if (i > 0) {
                 trophies[i].style.visibility = "collapse";
@@ -146,7 +146,7 @@ function updateRatings() {
 }
 
 /*--- Move counter display, start timer and 3 trophies rating ---*/
-function moveCounter() {
+function actionsCounter() {
     actions++;
     counter.innerHTML = actions;
     if (actions == 1) {
@@ -182,10 +182,10 @@ function startTimer() {
 
 /*--- Game finished modal pop-up ---*/
 function gameFinish() {
-    if (matchedCard.length == 16) {
+    if (colorMatched.length == 16) {
         clearInterval(interval);
         finalTime = timer.innerHTML;
-        modal.classList.add("show");
+        gamePopup.classList.add("show");
         var trophyRating = document.querySelector(".trophies").innerHTML;
         document.getElementById("finalMove").innerHTML = actions;
         document.getElementById("trophyRating").innerHTML = trophyRating;
@@ -195,14 +195,14 @@ function gameFinish() {
 }
 
 function closeModal() {
-    closeicon.addEventListener("click", function() {
-        modal.classList.remove("show");
+    closeModalPopup.addEventListener("click", function() {
+        gamePopup.classList.remove("show");
         startMemory();
     });
 }
 
 function runMemoryGame() {
-    modal.classList.remove("show");
+    gamePopup.classList.remove("show");
     startMemory();
 }
 

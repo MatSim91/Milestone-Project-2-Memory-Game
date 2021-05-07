@@ -164,7 +164,7 @@ h1 {
 }
 
 .close-button:hover {
-    color: #000000;
+    color: #FF0000;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -208,7 +208,7 @@ h1 {
     align-items: center;
 }
 
-.deck .card.match {
+.deck .card.equal {
     cursor: default;
     font-size: 130px;
     -webkit-backface-visibility: visible !important;
@@ -375,7 +375,7 @@ h1 {
     opacity: 1;
 }
 
-.popup .close {
+.popup .close-button-2 {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -386,8 +386,8 @@ h1 {
     color: #000000;
 }
 
-.popup .close:hover {
-    color: #e5f720;
+.popup .close-button-2:hover {
+    color: #FF0000;
 }
 
 /*--- Card Flip Animation ---*/
@@ -438,7 +438,7 @@ h1 {
         font-size: 60px;
     }
 
-    .deck .card.match {
+    .deck .card.equal {
         font-size: 60px;
     }
     .deck .card {

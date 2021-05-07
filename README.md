@@ -81,7 +81,7 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Interactive Modal pop-up on game.html page - When game is finished the pop up appears with the game stats and with the "Play again" button.
 
-- Trophies score rating - Based on the number of actions that were performed by player. If actions are less than eight the player gets three trophies. If actions are between nine and thirteen player gets two trophies. Anything above forteen actions player gets one star.
+- Trophies score rating - Based on the number of actions that were performed by player. If actions are less than ten the player gets three trophies. If actions are between eleven and fifteen player gets two trophies. Anything above sixteen actions player gets one star.
 
 - Restart button - Players can restart the game and the game stats at any time by clicking on the restart icon. 
 
@@ -192,9 +192,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
         - "You have made **X** actions"
 
     5. Tested the trophies feature to make sure it was giving the correct amount of trophies based on the correct amount of actions:
-        - If actions are less than 8 player gets 3 trophies.
-        - If actions are higher than 8 AND less then 13 player gets 2 trophies.
-        - Anything above 14 actions player gets 1 trophie.
+        - If actions are less than 10 player gets 3 trophies.
+        - If actions are higher than 10 AND less then 15 player gets 2 trophies.
+        - Anything above 16 actions player gets 1 trophie.
     Also checked if the starts were showing properly in the Modal pop-up that appears when the game finishes:
         - "Your Rating is: **X**"
 
