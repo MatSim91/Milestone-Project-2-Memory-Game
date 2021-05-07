@@ -16,6 +16,9 @@ let closeModalPopup = document.querySelector(".close-button-2");
 let gamePopup = document.getElementById("game-popup");
 var flippedColors = [];
 
+var content = document.getElementsByTagName("body")[0];
+var themeSwitch = document.getElementById("theme-switch");
+
 /*--- Randomize the icons ---*/
 
 function randomize(array) {
@@ -216,3 +219,10 @@ document.body.onload = (function() {
         icon.addEventListener("click", gameFinish);
     }
 })();
+
+/*--- Change theme on click ---*/
+
+themeSwitch.addEventListener("click", function(){
+    themeSwitch.classList.toggle("active");
+    content.classList.toggle("light-theme");
+})

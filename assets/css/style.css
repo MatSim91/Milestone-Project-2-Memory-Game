@@ -308,6 +308,44 @@ h1 {
     color: #eaeaea;
 }
 
+/*--- Theme Switch ---*/
+
+label {
+    position: absolute;
+    width: 80px;
+    height: 45px;
+    border: 2px solid;
+    border-radius: 20px;
+  }
+  label:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 5px;
+    border-radius: 50%;
+    background: #eaeaea;
+    cursor: pointer;
+    transition: 0.6s;
+}
+  label.active:before{
+    left: 38px;
+    background: #fff;
+  }
+  
+  body.light-theme{
+      background: #eaeaea;
+      color: black;
+  }
+
+  .theme-toggle {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
 /*--- Game Finish Modal Pop-up ---*/
 
 .popup {
