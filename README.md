@@ -87,6 +87,8 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Dark Theme/Light Theme button toggler - Players can choose their desired theme by simply clicking on the button and toggling between the Dark Theme and Light Theme. The dark theme is set by default.
 
+- Music player - Added a music player playing game music. Added three icons from fontawesome to: pause, stop and play the game music.
+
 # Technologies Used
 
 A brief overview of the languages, frameworks, and other tools I've used on this project:
@@ -202,7 +204,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
     6. Tested the Modal pop-up that appears when the game finishes and all the cards colors had a match. The pop-up should appear showing the correct ending game stats and offering the option to the player to play the game again or to close the pop-up.
 
-    7. Tested the Dark Theme/Light Theme button toggler - Clicked on the toggler several times and with different stages of the game (before no card was opened, with some equal cards flipped over and while clicking on the restart game button).
+    7. Tested the Dark Theme/Light Theme button toggler - Clicked on the toggler several times and with different stages of the game (before no card was opened, with some equal cards flipped over and while clicking on the restart game button). Tested the theme button toggler with the finish game pop up to make sure players can also interact with the toggler while the modal pop up is being displayed on the scren.
+
+    8. Tested the media player feature to make sure all buttons were working as expected. Tested the buttons while the finish game pop up shows when player finishes the game to make sure he could control the music player even with the modal popup opened. Tested the buttons with the theme changed and with the restart button.
 
 ## Bugs and Fixes
 

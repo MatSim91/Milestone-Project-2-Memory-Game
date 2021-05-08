@@ -128,7 +128,7 @@ h1 {
     pointer-events: none;
 }
 
-.modal-container-instructions.display {
+.modal-container-instructions.show {
     opacity: 1;
     pointer-events: auto;
 }
