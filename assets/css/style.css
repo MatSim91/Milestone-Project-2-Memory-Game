@@ -191,7 +191,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 0 0 3em;
 }
 
 .board .icon {
@@ -370,6 +369,10 @@ label {
 
 .icon-light {
     background: #000000;
+}
+
+.bottom-margin {
+    margin-bottom: 45px;
 }
 
 /*--- Music Player Control Buttons ---*/
