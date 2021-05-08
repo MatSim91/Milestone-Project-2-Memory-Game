@@ -85,6 +85,8 @@ This game was created with the main intent to develop quick thinking skills, imp
 
 - Restart button - Players can restart the game and the game stats at any time by clicking on the restart icon. 
 
+- Dark Theme/Light Theme button toggler - Players can choose their desired theme by simply clicking on the button and toggling between the Dark Theme and Light Theme. The dark theme is set by default.
+
 # Technologies Used
 
 A brief overview of the languages, frameworks, and other tools I've used on this project:
@@ -200,6 +202,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
     6. Tested the Modal pop-up that appears when the game finishes and all the cards colors had a match. The pop-up should appear showing the correct ending game stats and offering the option to the player to play the game again or to close the pop-up.
 
+    7. Tested the Dark Theme/Light Theme button toggler - Clicked on the toggler several times and with different stages of the game (before no card was opened, with some equal cards flipped over and while clicking on the restart game button).
 
 ## Bugs and Fixes
 
@@ -219,7 +222,11 @@ A brief overview of the languages, frameworks, and other tools I've used on this
     - 5.1: **Fix:** Typo with the onclick that was calling the runGame function.
 
 6. The project was not passing through the HTML validator and it was returning the error:  "The type attribute on the li element is obsolete".
-    - 6.1 **Fix:** I have updated the list from an ul (unordered list) to an ol (ordered list) and have inserted unique values to each card color (values from 1 to 8) I have also updated the JavaScript code to check if the values match. 
+    - 6.1 **Fix:** I have updated the list from an ul (unordered list) to an ol (ordered list) and have inserted unique values to each card color (values from 1 to 8) I have also updated the JavaScript code to check if the values match.
+
+7. After adding a few togglers regarding the theme switch on JavaScript the classes were not changing at all.
+    7.1 **Fix** Some classes were having a higher priority due to having a more specific target on style.css page. I have changed these classes to be more general and not affect the class list toggler.
+
 # Deployment
 
 - **GitHub Pages:** Under the repository page: 
