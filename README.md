@@ -269,9 +269,9 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The Modal pop-up was created with the help from Florin Pop: [Link Here](https://www.youtube.com/watch?v=XH5OW46yO8I)
 
-- The Memory game was based on Sandra Israel JavaScript memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
+- The Memory game was inspired by Sandra Israel memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
-- The Card flip Animation was based on Tutorials Point: 
+- The Card flip Animation inspired by Tutorials Point: [Link Here](https://www.tutorialspoint.com/css/css_animation_flip.htm)
 
 - [Code Institute Course](https://codeinstitute.net/) for the great idea of developing a memory game.
 
@@ -283,13 +283,15 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - [Google Fonts:](https://fonts.google.com/) Thanks to Google for providing this huge amount of free fonts on the site.
 
+- [ZAPSLAT](https://www.zapsplat.com/sound-effect-category/game-music-and-loops/) My many thanks to ZAPSLAT for providing the great music and for having such a large music catalog at hand.
+
 ## Code
 
 - [Bootstrap4](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap Library used throughout the project to make it easier using the grid system and pre-maded classes.
 
-- [Modal pop-up](https://www.youtube.com/watch?v=XH5OW46yO8I) was created with the help of the tutorial.
+- [Modal pop-up](https://www.youtube.com/watch?v=XH5OW46yO8I) was inspired by the tutorial.
 
-- The [JavaScript Memory Game](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating) was created with the help of on Sandra Israel JavaScript tutorial.
+- The [Memory Game](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating) was inspired by Sandra Israel tutorial.
 
 - [Vertical Alignment](https://stackoverflow.com/questions/47334164/how-to-middle-align-the-content-of-the-div-with-height-100vh/47334256) this Stack Overflow post helped with the vertical alignment.
 
@@ -301,7 +303,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 ## Media
 
--   No external media was used for this project.
+-   The game music was downloaded from [ZAPSLAT](https://www.zapsplat.com/sound-effect-category/game-music-and-loops/)
 
 ## Acknowledgements
 

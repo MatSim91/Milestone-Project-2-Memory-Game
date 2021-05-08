@@ -243,6 +243,8 @@ themeSwitch.addEventListener("click", function(){
 
 /*--- Function to play, pause and stop music ---*/
 
+document.getElementById("game-music").loop = true;
+
 function playMusic() { 
   gameMusic.play(); 
 } 
