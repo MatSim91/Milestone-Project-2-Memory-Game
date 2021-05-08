@@ -198,9 +198,8 @@ h1 {
     height: 3.7rem;
     width: 3.7rem;
     margin: 0.2rem 0.2rem;
-    background: #eaeaea;
+    background: #ffffff;
     font-size: 0;
-    color: #ffffff;
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -288,10 +287,13 @@ h1 {
     display: inline-block;
 }
 
+.restart {
+    color: #eaeaea;
+}
+
 .stats-panel .restart {
     float: right;
     cursor: pointer;
-    color: #eaeaea;
 }
 
 .fa-trophy {
@@ -331,12 +333,12 @@ label {
 }
   label.active:before{
     left: 38px;
-    background: #fff;
+    background: #000000;
   }
   
   body.light-theme{
       background: #eaeaea;
-      color: black;
+      color: #000000;
   }
 
   .theme-toggle {
@@ -344,6 +346,30 @@ label {
     padding: 20px;
     display: flex;
     align-items: center;
+}
+
+.actions-light {
+    color: #000000;
+}
+
+.timer-light {
+    color: #000000;
+}
+
+.h1-light {
+    color: #000000;
+}
+
+.restart-light {
+    color: #000000;
+}
+
+.board-light {
+    background: #eaeaea;
+}
+
+.icon-light {
+    background: #000000;
 }
 
 /*--- Game Finish Modal Pop-up ---*/
@@ -425,7 +451,7 @@ label {
 }
 
 .popup .close-button-2:hover {
-    color: #FF0000;
+    color: #ff0000;
 }
 
 /*--- icon Flip Animation ---*/

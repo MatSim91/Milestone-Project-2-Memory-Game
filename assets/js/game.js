@@ -17,6 +17,12 @@ let gamePopup = document.getElementById("game-popup");
 var flippedColors = [];
 
 var content = document.getElementsByTagName("body")[0];
+var actionsLight = document.querySelector(".actions");
+var timerLight = document.querySelector(".timer");
+var restartLight = document.querySelector(".restart");
+var headerLight = document.querySelector(".memory-title");
+var boardLight = document.querySelector(".board");
+var iconLight = document.querySelector(".icon");
 var themeSwitch = document.getElementById("theme-switch");
 
 /*--- Randomize the icons ---*/
@@ -220,9 +226,15 @@ document.body.onload = (function() {
     }
 })();
 
-/*--- Change theme on click ---*/
+/*--- Change theme on toggle button click ---*/
 
 themeSwitch.addEventListener("click", function(){
     themeSwitch.classList.toggle("active");
     content.classList.toggle("light-theme");
+    actionsLight.classList.toggle("actions-light");
+    timerLight.classList.toggle("timer-light");
+    restartLight.classList.toggle("restart-light");
+    headerLight.classList.toggle("h1-light");
+    boardLight.classList.toggle("board-light");
+    iconLight.classList.toggle("icon-light");
 })
