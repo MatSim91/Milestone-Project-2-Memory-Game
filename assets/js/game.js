@@ -25,6 +25,8 @@ var boardLight = document.querySelector(".board");
 var iconLight = document.querySelector(".icon");
 var themeSwitch = document.getElementById("theme-switch");
 
+var gameMusic = document.getElementById("game-music"); 
+
 /*--- Randomize the icons ---*/
 
 function randomize(array) {
@@ -238,3 +240,17 @@ themeSwitch.addEventListener("click", function(){
     boardLight.classList.toggle("board-light");
     iconLight.classList.toggle("icon-light");
 })
+
+/*--- Function to play, pause and stop music ---*/
+
+function playMusic() { 
+  gameMusic.play(); 
+} 
+
+function pauseMusic() { 
+  gameMusic.pause(); 
+} 
+
+function stopMusic() {
+    gameMusic.load();
+}

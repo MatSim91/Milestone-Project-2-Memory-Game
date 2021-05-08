@@ -310,7 +310,7 @@ h1 {
     color: #eaeaea;
 }
 
-/*--- Theme Switch ---*/
+/*--- Theme Switch Toggle Button  ---*/
 
 label {
     position: absolute;
@@ -370,6 +370,36 @@ label {
 
 .icon-light {
     background: #000000;
+}
+
+/*--- Music Player Control Buttons ---*/
+
+.media-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    margin: auto;
+}
+
+.navbar {
+    height: 83px;
+    margin-top: 100px;
+}
+
+.fa-pause-circle {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.fa-stop-circle {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.fa-play-circle {
+    cursor: pointer;
+    font-size: 50px;
 }
 
 /*--- Game Finish Modal Pop-up ---*/

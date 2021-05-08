@@ -117,9 +117,9 @@
             </div>
         </div>
 
-        <div class="theme-toggle">
-            <div class="row">
-                 <div class="col-12 text-center">
+        <div class="theme-toggle container-wrapper">
+            <div class="row col-12 text-center">
+                 <div class="col-12">
                      <label class="switch" id="theme-switch">
                         <span class="slider round"></span>
                     </label>
@@ -127,6 +127,22 @@
             </div>
         </div>
 
+        <footer>
+            <div class="footer">
+                <ul class="media-player navbar navbar-nav mr-auto">
+                    <li>
+                        <i class="far fa-pause-circle fa-2x media-icon" onclick="pauseMusic()" type="button"></i>
+                    </li>
+                    <li>
+                        <i class="far fa-stop-circle fa-2x media-icon" onclick="stopMusic()" type="button"></i>
+                    </li>
+                    <li>
+                        <audio id="game-music" src="assets/audio/music.mp3" preload="auto"></audio>
+                        <i class="far fa-play-circle fa-2x media-icon" id="playMusic" onclick="playMusic()" type="button"></i>
+                    </li>
+                </ul>
+            </div>
+        </footer>
         <script src="assets/js/game.js"></script>
     </body>
 </html>
