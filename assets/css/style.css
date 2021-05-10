@@ -1,565 +1,573 @@
 /*--- Generic Rules ---*/
 
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: #eaeaea;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: #eaeaea;
 }
 
 body {
-    background: #000000;
+	background: #000000;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 h1 {
-    color: #eaeaea;
-    font-family: Sora;
+	color: #eaeaea;
+	font-family: Sora;
 }
 
 .c-color {
-    color: #ff0000;
+	color: #ff0000;
 }
 
 .o-color {
-    color: #ffff00;
+	color: #ffff00;
 }
 
 .l-color {
-    color: #00ff00;
+	color: #00ff00;
 }
 
 .r-color {
-    color: #0000ff;
+	color: #0000ff;
 }
 
 .s-color {
-    color: #ffa500;
+	color: #ffa500;
 }
 
 .dark-green-color {
-    color: #006400;
+	color: #006400;
 }
+
 
 /*--- Index Page ---*/
 
 .game-title {
-    color: #eaeaea;
-    margin: 150px 0px -250px 0px;
+	color: #eaeaea;
+	margin: 150px 0px -250px 0px;
 }
 
 .page-title {
-    font-size: 12vmin;
+	font-size: 12vmin;
 }
+
 
 /*--- Vertical alignment with help from Stack Overflow (Link in the README Credits) ---*/
 
 .mid-buttons {
-    text-align: left;
-    height: 90vh;
-    padding: 20px;
-    display: flex;
-    align-items: center;
+	text-align: left;
+	height: 90vh;
+	padding: 20px;
+	display: flex;
+	align-items: center;
 }
 
 .row {
-    width: 100%;
+	width: 100%;
 }
 
 .btn-instructions {
-    background-color: #000000;
-    color: #ffff00;
-    border: #ffff00 solid 2px;
-    border-radius: 30px;
-    font-size: 25px;
+	background-color: #000000;
+	color: #ffff00;
+	border: #ffff00 solid 2px;
+	border-radius: 30px;
+	font-size: 25px;
 }
 
 .btn-instructions:hover {
-    background-color: #ffff00;
-    color: #000000;
-    min-width: 110px;
+	background-color: #ffff00;
+	color: #000000;
+	min-width: 110px;
 }
 
 .btn-play-game {
-    background-color: #000000;
-    color: #00ff00;
-    border: #00ff00 solid 2px;
-    border-radius: 50px;
-    font-size: 50px;
-    margin: 22px;
+	background-color: #000000;
+	color: #00ff00;
+	border: #00ff00 solid 2px;
+	border-radius: 50px;
+	font-size: 50px;
+	margin: 22px;
 }
 
 .btn-play-game:hover {
-    background-color: #00ff00;
-    color: #000000;
-    min-width: 110px;
+	background-color: #00ff00;
+	color: #000000;
+	min-width: 110px;
 }
+
 
 /*--- Modal Pop up customization ---*/
 
 .modal-container-instructions {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
 }
 
 .modal-container-instructions.show {
-    opacity: 1;
-    pointer-events: auto;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .modal-ins {
-    background-color: #eaeaea;
-    width: 600px;
-    max-width: 100%;
-    padding: 25px 40px;
-    border-radius: 30px;
+	background-color: #eaeaea;
+	width: 600px;
+	max-width: 100%;
+	padding: 25px 40px;
+	border-radius: 30px;
 }
 
 .modal-ins h1 {
-    margin: 0;
+	margin: 0;
 }
 
 .modal-ins p {
-    font-size: 20px;
-    text-align: left;
+	font-size: 20px;
+	text-align: left;
 }
 
 .space-indentation {
-    margin-left: 40px;
+	margin-left: 40px;
 }
 
 .close-button {
-    color: #000000;
-    border: #000000 solid 2px;
-    border-radius: 25px;
-    background-color: #eaeaea;
-    padding: 10px 25px;
-    font-size: 20px;
+	color: #000000;
+	border: #000000 solid 2px;
+	border-radius: 25px;
+	background-color: #eaeaea;
+	padding: 10px 25px;
+	font-size: 20px;
 }
 
 .close-button:hover {
-    color: #FF0000;
-    background-color: rgba(0, 0, 0, 0.2);
+	color: #FF0000;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .modal-play-game {
-    background-color: #00ff00;
-    color: #000000;
-    border: #000000 solid 2px;
-    border-radius: 25px;
-    font-size: 20px;
-    padding: 10px 25px;
+	background-color: #00ff00;
+	color: #000000;
+	border: #000000 solid 2px;
+	border-radius: 25px;
+	font-size: 20px;
+	padding: 10px 25px;
 }
 
 .modal-play-game:hover {
-    color: #000000;
-    background-color: rgba(0, 255, 0, 0.3);
+	color: #000000;
+	background-color: rgba(0, 255, 0, 0.3);
 }
+
 
 /*--- Game Page ---*/
 
 .board {
-    background: #000000;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+	background: #000000;
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .board .icon {
-    height: 3.7rem;
-    width: 3.7rem;
-    margin: 0.2rem 0.2rem;
-    background: #ffffff;
-    font-size: 0;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: #ffffff;
+	font-size: 0;
+	border-radius: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .board .icon.equal {
-    cursor: default;
-    font-size: 130px;
-    -webkit-backface-visibility: visible !important;
-    backface-visibility: visible !important;
+	cursor: default;
+	font-size: 130px;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
 }
 
 .board .icon.unmatched {
-    -webkit-backface-visibility: visible !important;
-    backface-visibility: visible !important;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
 }
 
 .board .icon.flip {
-    transform: rotateY(0);
-    cursor: default;
-    animation-name: flipInY;
-    -webkit-backface-visibility: visible !important;
-    backface-visibility: visible !important;
-    animation-duration: 0.8s;
+	transform: rotateY(0);
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: 0.8s;
 }
 
 .board .icon.off {
-    pointer-events: none;
+	pointer-events: none;
 }
 
 .board .icon.display {
-    font-size: 130px;
+	font-size: 130px;
 }
 
 .red {
-    color: #ff0000;
+	color: #ff0000;
 }
 
 .yellow {
-    color: #ffff00;
+	color: #ffff00;
 }
 
 .green {
-    color: #00ff00;
+	color: #00ff00;
 }
 
 .blue {
-    color: #0000ff;
+	color: #0000ff;
 }
 
 .orange {
-    color: #ffa500;
+	color: #ffa500;
 }
 
 .purple {
-    color: #800080;
+	color: #800080;
 }
 
 .pink {
-    color: #ff69b4;
+	color: #ff69b4;
 }
 
 .gray {
-    color: #808080;
+	color: #808080;
 }
+
 
 /*--- Stats Panel ---*/
 
 .stats-panel {
-    text-align: left;
-    margin-bottom: 10px;
+	text-align: left;
+	margin-bottom: 10px;
 }
 
 .stats-panel .trophies {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin: 0 5px 0 0;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
 }
 
 .stats-panel .trophies li {
-    list-style: none;
-    display: inline-block;
+	list-style: none;
+	display: inline-block;
 }
 
 .restart {
-    color: #eaeaea;
+	color: #eaeaea;
 }
 
 .stats-panel .restart {
-    float: right;
-    cursor: pointer;
+	float: right;
+	cursor: pointer;
 }
 
 .fa-trophy {
-    color: #ffff00;
+	color: #ffff00;
 }
 
 .actions {
-    color: #eaeaea;
+	color: #eaeaea;
 }
 
 .stop-watch {
-    display: inline-block;
-    margin: 0 1rem;
-    color: #eaeaea;
+	display: inline-block;
+	margin: 0 1rem;
+	color: #eaeaea;
 }
+
 
 /*--- Theme Switch Toggle Button  ---*/
 
 label {
-    position: absolute;
-    width: 80px;
-    height: 45px;
-    border: 2px solid;
-    border-radius: 20px;
-  }
-  label:before {
-    position: absolute;
-    content: '';
-    width: 30px;
-    height: 30px;
-    left: 5px;
-    top: 5px;
-    border-radius: 50%;
-    background: #eaeaea;
-    cursor: pointer;
-    transition: 0.6s;
+	position: absolute;
+	width: 80px;
+	height: 45px;
+	border: 2px solid;
+	border-radius: 20px;
 }
-  label.active:before{
-    left: 38px;
-    background: #000000;
-  }
-  
-  body.light-theme{
-      background: #eaeaea;
-      color: #000000;
-  }
 
-  .theme-toggle {
-    text-align: left;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
+label:before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 30px;
+	left: 5px;
+	top: 5px;
+	border-radius: 50%;
+	background: #eaeaea;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+label.active:before {
+	left: 38px;
+	background: #000000;
+}
+
+body.light-theme {
+	background: #eaeaea;
+	color: #000000;
+}
+
+.theme-toggle {
+	text-align: left;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	margin-right: 50px;
 }
 
 .actions-light {
-    color: #000000;
+	color: #000000;
 }
 
 .timer-light {
-    color: #000000;
+	color: #000000;
 }
 
 .h1-light {
-    color: #000000;
+	color: #000000;
 }
 
 .restart-light {
-    color: #000000;
+	color: #000000;
 }
 
 .board-light {
-    background: #eaeaea;
+	background: #eaeaea;
 }
 
 .icon-light {
-    background: #000000;
+	background: #000000;
 }
 
 .bottom-margin {
-    margin-bottom: 45px;
+	margin-bottom: 45px;
 }
+
 
 /*--- Music Player Control Buttons ---*/
 
 .media-player {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	margin: auto;
 }
 
 .navbar {
-    height: 83px;
-    margin-top: 100px;
+	height: 83px;
+	margin-top: 100px;
 }
 
 .fa-pause-circle {
-    cursor: pointer;
-    font-size: 50px;
+	cursor: pointer;
+	font-size: 50px;
 }
 
 .fa-stop-circle {
-    cursor: pointer;
-    font-size: 50px;
+	cursor: pointer;
+	font-size: 50px;
 }
 
 .fa-play-circle {
-    cursor: pointer;
-    font-size: 50px;
+	cursor: pointer;
+	font-size: 50px;
 }
+
 
 /*--- Game Finish Modal Pop-up ---*/
 
 .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #eaeaea;
-    border-radius: 5px;
-    width: 85%;
-    position: relative;
-    transition: all 5s ease-in-out;
+	margin: 70px auto;
+	padding: 20px;
+	background: #eaeaea;
+	border-radius: 5px;
+	width: 85%;
+	position: relative;
+	transition: all 5s ease-in-out;
 }
 
 .popup .content-1,
 .content-2 {
-    max-height: 30%;
-    overflow: auto;
-    text-align: center;
+	max-height: 30%;
+	overflow: auto;
+	text-align: center;
 }
 
 .popup h2 {
-    margin-top: 0;
-    color: #000000;
+	margin-top: 0;
+	color: #000000;
 }
 
 #trophyRating li {
-    display: inline-block;
+	display: inline-block;
 }
 
 .display {
-    visibility: visible !important;
-    opacity: 100 !important;
+	visibility: visible !important;
+	opacity: 100 !important;
 }
 
 #play-again {
-    background-color: #000000;
-    padding: 0.7rem 1rem;
-    font-size: 1.1rem;
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    color: #ffffff;
-    border-radius: 30px;
+	background-color: #000000;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	color: #ffffff;
+	border-radius: 30px;
 }
 
 #play-again:hover {
-    color: #000000;
-    border: solid 1px #000000;
-    background-color: #eaeaea;
+	color: #000000;
+	border: solid 1px #000000;
+	background-color: #eaeaea;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
 }
 
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .popup .close-button-2 {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000000;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
 }
 
 .popup .close-button-2:hover {
-    color: #ff0000;
+	color: #ff0000;
 }
+
 
 /*--- icon Flip Animation ---*/
 
 @keyframes flipInY {
-    0% {
-        transform: perspective(400px) rotateY(90deg);
-        opacity: 0;
-    }
-    40% {
-        transform: perspective(400px) rotateY(-10deg);
-    }
-    70% {
-        transform: perspective(400px) rotateY(10deg);
-    }
-    100% {
-        transform: perspective(400px) rotateY(0deg);
-        opacity: 1;
-    }
+	0% {
+		transform: perspective(400px) rotateY(90deg);
+		opacity: 0;
+	}
+	40% {
+		transform: perspective(400px) rotateY(-10deg);
+	}
+	70% {
+		transform: perspective(400px) rotateY(10deg);
+	}
+	100% {
+		transform: perspective(400px) rotateY(0deg);
+		opacity: 1;
+	}
 }
+
 
 /*--- Media Queries for Larger Screens ---*/
 
 @media (min-width: 768px) {
-    .container {
-        font-size: 22px;
-    }
-
-    .board {
-        width: 660px;
-        height: 680px;
-    }
-
-    .board .icon {
-        height: 125px;
-        width: 125px;
-    }
-
-    .popup {
-        width: 60%;
-    }
+	.container {
+		font-size: 22px;
+	}
+	.board {
+		width: 660px;
+		height: 680px;
+	}
+	.board .icon {
+		height: 125px;
+		width: 125px;
+	}
+	.popup {
+		width: 60%;
+	}
 }
+
 
 /*--- Media Queries for Smaller Screens ---*/
 
 @media (max-width: 767px) {
-    .board .icon.display {
-        font-size: 60px;
-    }
-
-    .board .icon.equal {
-        font-size: 60px;
-    }
-    .board .icon {
-        border-radius: 10px;
-    }
+	.board .icon.display {
+		font-size: 60px;
+	}
+	.board .icon.equal {
+		font-size: 60px;
+	}
+	.board .icon {
+		border-radius: 10px;
+	}
 }
 
 @media (max-width: 390px) {
-    .btn-play-game {
-        margin-top: 15px;
-    }
-    .game-title {
-        margin: 75px 0px -150px 0px;
-    }
+	.btn-play-game {
+		margin-top: 15px;
+	}
+	.game-title {
+		margin: 75px 0px -150px 0px;
+	}
 }
 
 @media (max-width: 320px) {
-    .board {
-        width: 85%;
-    }
-
-    .board .icon {
-        height: 4.7rem;
-        width: 4.7rem;
-    }
+	.board {
+		width: 85%;
+	}
+	.board .icon {
+		height: 4.7rem;
+		width: 4.7rem;
+	}
 }

@@ -1,152 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Color's Memory Game</title>
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/c09d831fff.js" crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    </head>
-    <body>
-        <!-- Game Title -->
-
-        <div class="container-fluid container-wrapper">
-            <div class="row center">
-                <div class="col-12 text-center">
-                    <h1 class="page-title">
-                        <span class="c-color">C</span><span class="o-color">o</span><span class="l-color">l</span><span class="o-color">o</span><span class="r-color">r</span><span class="c-color">'</span><span class="s-color">s</span>
-                        <span class="memory-title">Memory Game</span>
-                    </h1>
-                </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Color's Memory Game</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/c09d831fff.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+   </head>
+   <body>
+      <!-- Game Title -->
+      <div class="container-fluid container-wrapper">
+         <div class="row center">
+            <div class="col-12 text-center">
+               <h1 class="page-title">
+                  <span class="c-color">C</span><span class="o-color">o</span><span class="l-color">l</span><span class="o-color">o</span><span class="r-color">r</span><span class="c-color">'</span><span class="s-color">s</span>
+                  <span class="memory-title">Memory Game</span>
+               </h1>
             </div>
-        </div>
-
-        <div class="container">
-            <!-- Memory Game Icons -->
-
-            <ol class="board" id="icons-board">
-                <li class="icon" value="1">
-                    <i class="fas fa-square red"></i>
-                </li>
-                <li class="icon" value="2">
-                    <i class="fas fa-square yellow"></i>
-                </li>
-                <li class="icon" value="3">
-                    <i class="fas fa-square green"></i>
-                </li>
-                <li class="icon" value="4">
-                    <i class="fas fa-square blue"></i>
-                </li>
-                <li class="icon" value="5">
-                    <i class="fas fa-square orange"></i>
-                </li>
-                <li class="icon" value="3">
-                    <i class="fas fa-square green"></i>
-                </li>
-                <li class="icon" value="6">
-                    <i class="fas fa-square purple"></i>
-                </li>
-                <li class="icon" value="7">
-                    <i class="fas fa-square pink"></i>
-                </li>
-                <li class="icon" value="1">
-                    <i class="fas fa-square red"></i>
-                </li>
-                <li class="icon" value="8">
-                    <i class="fas fa-square gray"></i>
-                </li>
-                <li class="icon" value="6">
-                    <i class="fas fa-square purple"></i>
-                </li>
-                <li class="icon" value="8">
-                    <i class="fas fa-square gray"></i>
-                </li>
-                <li class="icon" value="4">
-                    <i class="fas fa-square blue"></i>
-                </li>
-                <li class="icon" value="7">
-                    <i class="fas fa-square pink"></i>
-                </li>
-                <li class="icon" value="2">
-                    <i class="fas fa-square yellow"></i>
-                </li>
-                <li class="icon" value="5">
-                    <i class="fas fa-square orange"></i>
-                </li>
-            </ol>
-
-            <!-- Stats Panel -->
-
-            <section class="stats-panel">
-                <ul class="trophies">
-                    <li><i class="fas fa-trophy"></i></li>
-                    <li><i class="fas fa-trophy"></i></li>
-                    <li><i class="fas fa-trophy"></i></li>
-                </ul>
-                <span class="actions">0</span> Action(s)
-
-                <div class="stop-watch"></div>
-
-                <div class="restart" onclick="runMemoryGame()">
-                    <i class="fas fa-redo"></i>
-                </div>
-            </section>
-
-            <!-- Game Finish Modal Pop-up -->
-
-            <div id="game-popup" class="overlay text-dark">
-                <div class="popup">
-                    <h2 class="text-center">You Win!!</h2>
-                    <a class="close-button-2" href="#">×</a>
-                    <div class="content-1">
-                        Congratulations, you have won the game!
-                    </div>
-                    <div class="content-2">
-                        <p>You have made <span id="finalMove"> </span> actions</p>
-                        <p>in <span id="game-lenght"> </span></p>
-                        <p class="text-center">Your Rating is: <span id="trophyRating"></span></p>
-                    </div>
-                    <button id="play-again" class="btn" onclick="runMemoryGame()">
-                        Play again
-                    </button>
-                </div>
+         </div>
+      </div>
+      <div class="container">
+         <!-- Memory Game Icons -->
+         <ol class="board" id="icons-board">
+            <li class="icon" value="1">
+               <i class="fas fa-square red"></i>
+            </li>
+            <li class="icon" value="2">
+               <i class="fas fa-square yellow"></i>
+            </li>
+            <li class="icon" value="3">
+               <i class="fas fa-square green"></i>
+            </li>
+            <li class="icon" value="4">
+               <i class="fas fa-square blue"></i>
+            </li>
+            <li class="icon" value="5">
+               <i class="fas fa-square orange"></i>
+            </li>
+            <li class="icon" value="3">
+               <i class="fas fa-square green"></i>
+            </li>
+            <li class="icon" value="6">
+               <i class="fas fa-square purple"></i>
+            </li>
+            <li class="icon" value="7">
+               <i class="fas fa-square pink"></i>
+            </li>
+            <li class="icon" value="1">
+               <i class="fas fa-square red"></i>
+            </li>
+            <li class="icon" value="8">
+               <i class="fas fa-square gray"></i>
+            </li>
+            <li class="icon" value="6">
+               <i class="fas fa-square purple"></i>
+            </li>
+            <li class="icon" value="8">
+               <i class="fas fa-square gray"></i>
+            </li>
+            <li class="icon" value="4">
+               <i class="fas fa-square blue"></i>
+            </li>
+            <li class="icon" value="7">
+               <i class="fas fa-square pink"></i>
+            </li>
+            <li class="icon" value="2">
+               <i class="fas fa-square yellow"></i>
+            </li>
+            <li class="icon" value="5">
+               <i class="fas fa-square orange"></i>
+            </li>
+         </ol>
+         <!-- Stats Panel -->
+         <section class="stats-panel">
+            <ul class="trophies">
+               <li><i class="fas fa-trophy"></i></li>
+               <li><i class="fas fa-trophy"></i></li>
+               <li><i class="fas fa-trophy"></i></li>
+            </ul>
+            <span class="actions">0</span> Action(s)
+            <div class="stop-watch"></div>
+            <div class="restart" onclick="runMemoryGame()">
+               <i class="fas fa-redo"></i>
             </div>
-        </div>
-        
-        <!-- Button to Switch the Theme (Dark to Light)-->
-
-        <div class="theme-toggle container-wrapper">
-            <div class="row col-12 text-center">
-                 <div class="col-12 bottom-margin">
-                     <label class="switch" id="theme-switch">
-                        <span class="slider round"></span>
-                    </label>
-                 </div>
+         </section>
+         <!-- Game Finish Modal Pop-up -->
+         <div id="game-popup" class="overlay text-dark">
+            <div class="popup">
+               <h2 class="text-center">You Win!!</h2>
+               <a class="close-button-2" href="#">×</a>
+               <div class="content-1">
+                  Congratulations, you have won the game!
+               </div>
+               <div class="content-2">
+                  <p>You have made <span id="finalMove"> </span> actions</p>
+                  <p>in <span id="game-lenght"> </span></p>
+                  <p class="text-center">Your Rating is: <span id="trophyRating"></span></p>
+               </div>
+               <button id="play-again" class="btn" onclick="runMemoryGame()">
+               Play again
+               </button>
             </div>
-        </div>
-
-        <!-- Media Player to Control the Game Music -->
-
-        <footer>
-            <div class="footer">
-                <ul class="media-player navbar navbar-nav mr-auto">
-                    <li>
-                        <i class="far fa-pause-circle fa-2x media-icon" onclick="pauseMusic()"></i>
-                    </li>
-                    <li>
-                        <i class="far fa-stop-circle fa-2x media-icon" onclick="stopMusic()"></i>
-                    </li>
-                    <li>
-                        <audio id="game-music" src="assets/audio/music.mp3" preload="auto"></audio>
-                        <i class="far fa-play-circle fa-2x media-icon" id="playMusic" onclick="playMusic()"></i>
-                    </li>
-                </ul>
+         </div>
+      </div>
+      <!-- Button to Switch the Theme (Dark to Light)-->
+      <div class="theme-toggle container-wrapper">
+         <div class="row col-12 text-center">
+            <div class="col-12 bottom-margin">
+               <label class="switch" id="theme-switch">
+               <span class="slider round"></span>
+               </label>
             </div>
-        </footer>
-        <script src="assets/js/game.js"></script>
-    </body>
+         </div>
+      </div>
+      <!-- Media Player to Control the Game Music -->
+      <footer>
+         <div class="footer">
+            <ul class="media-player navbar navbar-nav mr-auto">
+               <li>
+                  <i class="far fa-pause-circle fa-2x media-icon" onclick="pauseMusic()"></i>
+               </li>
+               <li>
+                  <i class="far fa-stop-circle fa-2x media-icon" onclick="stopMusic()"></i>
+               </li>
+               <li>
+                  <audio id="game-music" src="assets/audio/music.mp3" preload="auto"></audio>
+                  <i class="far fa-play-circle fa-2x media-icon" id="playMusic" onclick="playMusic()"></i>
+               </li>
+            </ul>
+         </div>
+      </footer>
+      <script src="assets/js/game.js"></script>
+   </body>
 </html>
