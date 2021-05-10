@@ -303,7 +303,7 @@ h1 {
     color: #eaeaea;
 }
 
-.timer {
+.stop-watch {
     display: inline-block;
     margin: 0 1rem;
     color: #eaeaea;
@@ -345,6 +345,7 @@ label {
     padding: 20px;
     display: flex;
     align-items: center;
+    margin-right: 50px;
 }
 
 .actions-light {
@@ -381,7 +382,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10%;
+    width: 30%;
     margin: auto;
 }
 

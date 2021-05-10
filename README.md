@@ -269,7 +269,7 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 - The Modal pop-up was created with the help from Florin Pop: [Link Here](https://www.youtube.com/watch?v=XH5OW46yO8I)
 
-- The Memory game was inspired by Sandra Israel memory gave: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
+- The Memory game was inspired by Sandra Israel memory game and was heavily customized and optimized: [Link Here](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-4-star-rating)
 
 - The Card flip Animation inspired by Tutorials Point: [Link Here](https://www.tutorialspoint.com/css/css_animation_flip.htm)
 
@@ -309,6 +309,6 @@ A brief overview of the languages, frameworks, and other tools I've used on this
 
 -   My mentor Akshat for all his help and ideas.
 
--   Thanks to the Code Instute Tutor Support for helping adding me more hours on GitPod so fast!
+-   Thanks to the Code Institute Tutor Support for helping adding me more hours on GitPod so fast!
 
 -   Slack community peers for helping with general questions.

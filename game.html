@@ -26,7 +26,7 @@
         </div>
 
         <div class="container">
-            <!-- Memory game icons -->
+            <!-- Memory Game Icons -->
 
             <ol class="board" id="icons-board">
                 <li class="icon" value="1">
@@ -89,7 +89,7 @@
                 </ul>
                 <span class="actions">0</span> Action(s)
 
-                <div class="timer"></div>
+                <div class="stop-watch"></div>
 
                 <div class="restart" onclick="runMemoryGame()">
                     <i class="fas fa-redo"></i>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="content-2">
                         <p>You have made <span id="finalMove"> </span> actions</p>
-                        <p>in <span id="totalTime"> </span></p>
+                        <p>in <span id="game-lenght"> </span></p>
                         <p class="text-center">Your Rating is: <span id="trophyRating"></span></p>
                     </div>
                     <button id="play-again" class="btn" onclick="runMemoryGame()">
@@ -116,6 +116,8 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Button to Switch the Theme (Dark to Light)-->
 
         <div class="theme-toggle container-wrapper">
             <div class="row col-12 text-center">
@@ -126,6 +128,8 @@
                  </div>
             </div>
         </div>
+
+        <!-- Media Player to Control the Game Music -->
 
         <footer>
             <div class="footer">

@@ -1,4 +1,4 @@
-/*--- Declared Variables ----*/ 
+/*--- All Declared Variables ----*/
 
 let iconList = document.getElementsByClassName("icon");
 let icons = [...iconList];
@@ -18,16 +18,16 @@ var flippedColors = [];
 
 var content = document.getElementsByTagName("body")[0];
 var actionsLight = document.querySelector(".actions");
-var timerLight = document.querySelector(".timer");
+var timerLight = document.querySelector(".stop-watch");
 var restartLight = document.querySelector(".restart");
 var headerLight = document.querySelector(".memory-title");
 var boardLight = document.querySelector(".board");
 var iconLight = document.querySelector(".icon");
 var themeSwitch = document.getElementById("theme-switch");
 
-var gameMusic = document.getElementById("game-music"); 
+var gameMusic = document.getElementById("game-music");
 
-/*--- Randomize the icons ---*/
+/*--- Randomizing all the icons Inspired by Sandra Israel with function optmized and customized ---*/
 
 function randomize(array) {
     var currentIndex = array.length,
@@ -43,7 +43,8 @@ function randomize(array) {
     return array;
 }
 
-/*--- Initialises the game board and displays all the icons reset timer and actions ---*/
+/*--- Start the game board and remove classes to reset game and reset the Stopwatch and actions ---*/
+
 function initialiseGameBoard() {
     flippedColors = [];
     icons = randomize(icons);
@@ -66,23 +67,24 @@ function initScore() {
     counter.innerHTML = actions;
 }
 
-function initTimer() {
-    second = 0;
-    minute = 0;
-    hour = 0;
-    var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 mins 0 secs";
-    clearInterval(interval);
+function initStopWatch() {
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    var stopWatch = document.querySelector(".stop-watch");
+    stopWatch.innerHTML = "0 mins 0 secs";
+    clearInterval(time);
 }
 
 function startMemory() {
     initialiseGameBoard();
     initScore();
     startTrophies();
-    initTimer();
+    initStopWatch();
 }
 
 /*--- Toggle classes to flip and display the icons ---*/
+
 var showColor = function() {
     this.classList.toggle("flip");
     this.classList.toggle("display");
@@ -90,6 +92,7 @@ var showColor = function() {
 };
 
 /*--- Function to check if flipped icons are the same or different ---*/
+
 function colorMatch() {
     flippedColors.push(this);
     var len = flippedColors.length;
@@ -103,7 +106,8 @@ function colorMatch() {
     }
 }
 
-/*--- Adding classes when icons are the same ---*/
+/*--- Adding classes when icons are the same to keep displaying the icons color ---*/
+
 function same() {
     flippedColors[0].classList.add("equal", "off");
     flippedColors[1].classList.add("equal", "off");
@@ -112,7 +116,8 @@ function same() {
     flippedColors = [];
 }
 
-/*--- Adding classes when icons are different ---*/
+/*--- Adding classes when icons are different to hide the icons color ---*/
+
 function different() {
     flippedColors[0].classList.add("different");
     flippedColors[1].classList.add("different");
@@ -156,56 +161,59 @@ function updateRatings() {
     }
 }
 
-/*--- Move counter display, start timer and 3 trophies rating ---*/
+/*--- Move counter display, start the Stopwatch and 3 trophies rating ---*/
+
 function actionsCounter() {
     actions++;
     counter.innerHTML = actions;
     if (actions == 1) {
-        second = 0;
-        minute = 0;
-        hour = 0;
-        startTimer();
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        startStopWatch();
     }
     updateRatings();
 }
 
-/*--- Game Timer ---*/
-var second = 0,
-    minute = 0;
-hour = 0;
-var timer = document.querySelector(".timer");
-var interval;
+/*--- Game Stopwatch  ---*/
 
-function startTimer() {
-    interval = setInterval(function() {
-        timer.innerHTML = minute + "mins " + second + "secs";
-        second++;
-        if (second == 60) {
-            minute++;
-            second = 0;
+var seconds = 0,
+    minutes = 0;
+hours = 0;
+var stopWatch = document.querySelector(".stop-watch");
+var time;
+
+function startStopWatch() {
+    time = setInterval(function() {
+        stopWatch.innerHTML = minutes + " mins " + seconds + " secs";
+        seconds++;
+        if (seconds == 60) {
+            minutes++;
+            seconds = 0;
         }
-        if (minute == 60) {
-            hour++;
-            minute = 0;
+        if (minutes == 60) {
+            hours++;
+            minutes = 0;
         }
     }, 1000);
 }
 
 /*--- Game finished modal pop-up ---*/
+
 function gameFinish() {
     if (sameColor.length == 16) {
-        clearInterval(interval);
-        finalTime = timer.innerHTML;
+        clearInterval(time);
+        gameLenght = stopWatch.innerHTML;
         gamePopup.classList.add("display");
         var trophyRating = document.querySelector(".trophies").innerHTML;
         document.getElementById("finalMove").innerHTML = actions;
         document.getElementById("trophyRating").innerHTML = trophyRating;
-        document.getElementById("totalTime").innerHTML = finalTime;
-        closeModal();
+        document.getElementById("game-lenght").innerHTML = gameLenght;
+        closePopup();
     }
 }
 
-function closeModal() {
+function closePopup() {
     closeModalPopup.addEventListener("click", function() {
         gamePopup.classList.remove("display");
         startMemory();
@@ -218,6 +226,7 @@ function runMemoryGame() {
 }
 
 /*--- For loop adding Event Listener ---*/
+
 document.body.onload = (function() {
     startMemory();
     for (var i = 0; i < icons.length; i++) {
@@ -230,7 +239,7 @@ document.body.onload = (function() {
 
 /*--- Change theme on toggle button click ---*/
 
-themeSwitch.addEventListener("click", function(){
+themeSwitch.addEventListener("click", function() {
     themeSwitch.classList.toggle("active");
     content.classList.toggle("light-theme");
     actionsLight.classList.toggle("actions-light");
@@ -245,13 +254,13 @@ themeSwitch.addEventListener("click", function(){
 
 document.getElementById("game-music").loop = true;
 
-function playMusic() { 
-  gameMusic.play(); 
-} 
+function playMusic() {
+    gameMusic.play();
+}
 
-function pauseMusic() { 
-  gameMusic.pause(); 
-} 
+function pauseMusic() {
+    gameMusic.pause();
+}
 
 function stopMusic() {
     gameMusic.load();
